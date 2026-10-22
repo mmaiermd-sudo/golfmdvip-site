@@ -335,3 +335,10 @@ table.results{width:100%;border-collapse:collapse;background:var(--card);border:
 .soon-thumb img{display:block;width:100%;height:auto}
 .badge.soon{position:absolute;top:12px;left:12px;background:var(--gold);color:var(--green-dk);font-weight:700;padding:4px 10px;border-radius:999px;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}
 .episode.upcoming span.btn[aria-disabled]{cursor:default;opacity:.8}
+/* Ep10 dedication, chapters, listen buttons (Oct 21, 2026) */
+.dedication{border-left:3px solid var(--gold-dk,#b8912f);padding:.4rem .8rem;background:rgba(184,145,47,.08)}
+.chapters summary{cursor:pointer;font-weight:600;margin:.4rem 0}
+.chapters ul{list-style:none;padding:0;margin:.3rem 0 .8rem;font-size:.9rem;columns:2;column-gap:1.5rem}
+.chapters li{margin:.15rem 0;break-inside:avoid}.chapters a{font-variant-numeric:tabular-nums;margin-right:.35rem}
+.btns.listen{margin-top:.6rem}
+@media(max-width:700px){.chapters ul{columns:1}}
