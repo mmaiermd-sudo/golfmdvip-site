@@ -342,3 +342,6 @@ table.results{width:100%;border-collapse:collapse;background:var(--card);border:
 .chapters li{margin:.15rem 0;break-inside:avoid}.chapters a{font-variant-numeric:tabular-nums;margin-right:.35rem}
 .btns.listen{margin-top:.6rem}
 @media(max-width:700px){.chapters ul{columns:1}}
+
+.friend-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 12px;border:3px solid #0c2340}
+.friend-card h3{text-align:center}
