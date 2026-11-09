@@ -4,15 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Beat the GolfDoc | Golden Helmets &amp; Green Jackets Podcast</title>
-<meta name="description" content="Beat the GolfDoc Week 10 results and season standings. A free weekly college football picks contest. Just for bragging rights!">
+<meta name="description" content="Beat the GolfDoc Week 11 contest and championship poll, plus Week 10 results and season standings. Just for bragging rights!">
 <meta property="og:title" content="Beat the GolfDoc | Golden Helmets &amp; Green Jackets Podcast">
-<meta property="og:description" content="Beat the GolfDoc Week 10 results and season standings. A free weekly college football picks contest. Just for bragging rights!">
+<meta property="og:description" content="Beat the GolfDoc Week 11 contest and championship poll, plus Week 10 results and season standings. Just for bragging rights!">
 <meta property="og:image" content="img/banner_full.jpg">
 <meta name="theme-color" content="#062218">
 <link rel="icon" href="img/avatar_192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.champ-block{margin:8px 0 28px}
+.champ-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:22px;align-items:start}
+@media (max-width:800px){.champ-grid{grid-template-columns:1fr}}
+.champ-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 16px 18px;box-shadow:var(--shadow)}
+.champ-frame{display:block;width:100%;height:min(78vh,820px);min-height:480px;border:0;border-radius:12px;background:#fff}
+.champ-results{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:12px}
+.champ-results li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center}
+.champ-team{font-weight:700;color:var(--green-dk)}
+.champ-meta{font-variant-numeric:tabular-nums;color:var(--ink);font-size:.92rem}
+.champ-track{grid-column:1 / -1;height:12px;border-radius:999px;background:#F3EBD2;overflow:hidden}
+.champ-bar{display:block;height:100%;background:var(--green);border-radius:999px}
+.champ-results li[data-nd="true"] .champ-bar{background:var(--gold-dk)}
+.champ-status{margin:8px 0 0}
+.champ-summary{margin:10px 0 0;font-size:.92rem;color:var(--muted)}
+#champ-retry[hidden]{display:none}
+</style>
 </head>
 <body>
 <header class="site-header"><div class="wrap">
@@ -29,6 +46,27 @@
 <div class="btns" style="margin:22px 0 8px"><a class="btn btn-outline" href="picks.html">See GolfDoc&#x27;s Weekly Picks</a></div>
 <h2 style="margin-top:36px">How it works</h2>
 <ol><li>Open the entry form and pick each of the 5 games against the spread.</li><li>Make your bonus calls: Fairway Finder, GolfDoc Special, Golden Domer, Cade&#x27;s Turkey Triple and the Matty Ice Lock.</li><li>Submit before kickoff, then check the leaderboard to see if you beat the GolfDoc.</li></ol>
+<h2 id="week-11" style="margin-top:36px">Week 11 contest</h2>
+<p id="w11-lock-note">Week 11 picks lock Saturday, Nov 14, 2026 at 11:00 a.m. CST. The championship poll below stays open after that lock.</p>
+<div class="btns" id="w11-contest-actions"><a class="btn btn-gold" id="w11-contest-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdhBT1dN-j_DGhNiN7yKJvN9QMfVSRvFfeab8PSXm0g0U7CCg/viewform" target="_blank" rel="noopener">Enter Week 11</a></div>
+<div class="champ-block" id="championship-poll">
+<h2>Championship poll</h2>
+<p>Who do you think is the best team in the country and will win the national championship? The same optional question is on the Week 11 contest form. One latest vote per person counts across both forms. Totals below are counts only.</p>
+<div class="champ-grid">
+<div class="champ-card">
+<iframe class="champ-frame" title="Championship poll form" src="https://docs.google.com/forms/d/e/1FAIpQLSdZeWdDDK2M3XedWPkPIvA4qOT68UL6itJWuTdwq6vwOgcJ3A/viewform?embedded=true"></iframe>
+<p style="margin:12px 0 0"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdZeWdDDK2M3XedWPkPIvA4qOT68UL6itJWuTdwq6vwOgcJ3A/viewform" target="_blank" rel="noopener">Open the championship poll</a></p>
+</div>
+<div class="champ-card" id="champ-poll" data-event="w11_cfb_natty_2026" data-endpoint="https://script.google.com/macros/s/AKfycbz5ZsCSCvNeRULWoILQZF8gYZ4thhdIgRiD_9r4bYxTgLq2q_Ls5C-pgOh-ZgGTcsUN/exec">
+<h3>Combined results</h3>
+<p class="fine-note">Notre Dame is listed first. Every other choice, including Other, comes from the combined tally. Names and email addresses are not shown.</p>
+<div id="champ-status" class="champ-status" role="status" aria-live="polite" aria-busy="false"></div>
+<div id="champ-results"></div>
+<p id="champ-summary" class="champ-summary" aria-live="polite"></p>
+<button type="button" class="btn btn-outline btn-sm" id="champ-retry" hidden>Try again</button>
+</div>
+</div>
+</div>
 <h2 style="margin-top:36px">Week 10 results</h2>
 <p style="opacity:.85">Updated Sun Nov 8, 2026. <strong>Matty “The Bull” Gravano</strong> won Week 10 with <strong>8</strong> points. Eight players tied at 7. GolfDoc scored <strong>3</strong>; <strong>51 of 67</strong> contestants beat him. GolfDoc&#x27;s 2026 picks record: <strong>29-21-0</strong> (Week 10: 3-2). Season rank is average points per week played.</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;align-items:start">
@@ -312,6 +350,159 @@
   </div>
   <div class="fine">© 2026 Golden Helmets &amp; Green Jackets Podcast · GOLF MD VIP. Just for bragging rights! Sports-medicine content is educational and is not medical advice — see your own physician for diagnosis and treatment.</div>
 </div></footer>
+<script src="btg-champ-poll.js"></script>
+<script>
+(function () {
+  var lockAt = Date.parse('2026-11-14T17:00:00Z');
+  var contestLink = document.getElementById('w11-contest-link');
+  var lockNote = document.getElementById('w11-lock-note');
+  if (contestLink && isFinite(lockAt) && Date.now() >= lockAt) {
+    contestLink.textContent = 'Week 11 picks are locked';
+    contestLink.classList.add('disabled');
+    contestLink.setAttribute('aria-disabled', 'true');
+    contestLink.removeAttribute('href');
+    if (lockNote) lockNote.textContent = 'Week 11 contest picks locked Saturday, Nov 14, 2026 at 11:00 a.m. CST. The championship poll stays open.';
+  }
+
+  var root = document.getElementById('champ-poll');
+  var statusEl = document.getElementById('champ-status');
+  var resultsEl = document.getElementById('champ-results');
+  var summaryEl = document.getElementById('champ-summary');
+  var retryBtn = document.getElementById('champ-retry');
+  if (!root || !window.BTGChampPoll) return;
+  var api = window.BTGChampPoll;
+  var seq = 0;
+  var active = null;
+
+  function setBusy(busy) {
+    statusEl.setAttribute('aria-busy', busy ? 'true' : 'false');
+  }
+  function showRetry(show) {
+    if (show) retryBtn.hidden = false;
+    else retryBtn.hidden = true;
+  }
+  function clearResults() {
+    resultsEl.replaceChildren();
+    summaryEl.textContent = '';
+  }
+  function formatUpdated(iso) {
+    var dt = new Date(iso);
+    if (!iso || isNaN(dt.getTime())) return '';
+    return dt.toLocaleString('en-US', {
+      timeZone: 'America/Chicago',
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+      timeZoneName: 'short'
+    });
+  }
+  function formatPct(pct) {
+    var n = Number(pct);
+    if (!isFinite(n)) return '';
+    return (Math.round(n * 10) / 10).toString().replace(/\.0$/, '') + '%';
+  }
+  function renderResults(payload) {
+    clearResults();
+    var list = document.createElement('ul');
+    list.className = 'champ-results';
+    list.setAttribute('aria-label', 'Combined championship poll results');
+    payload.results.forEach(function (row) {
+      var li = document.createElement('li');
+      if (row.team.toLowerCase() === 'notre dame') li.setAttribute('data-nd', 'true');
+      var team = document.createElement('span');
+      team.className = 'champ-team';
+      team.textContent = row.team;
+      var meta = document.createElement('span');
+      meta.className = 'champ-meta';
+      var votes = row.count === 1 ? '1 vote' : row.count + ' votes';
+      meta.textContent = votes + ', ' + formatPct(row.pct);
+      var track = document.createElement('span');
+      track.className = 'champ-track';
+      track.setAttribute('aria-hidden', 'true');
+      var bar = document.createElement('span');
+      bar.className = 'champ-bar';
+      var width = Math.max(0, Math.min(100, Number(row.pct) || 0));
+      bar.style.width = width + '%';
+      track.appendChild(bar);
+      li.appendChild(team);
+      li.appendChild(meta);
+      li.appendChild(track);
+      list.appendChild(li);
+    });
+    resultsEl.appendChild(list);
+    var voters = payload.totalVoters === 1 ? '1 voter' : payload.totalVoters + ' voters';
+    var when = formatUpdated(payload.updated);
+    summaryEl.textContent = when ? voters + '. Updated ' + when + '.' : voters + '.';
+  }
+  function showMessage(text, canRetry) {
+    clearResults();
+    statusEl.textContent = text;
+    showRetry(canRetry);
+    setBusy(false);
+  }
+  function load() {
+    if (active) {
+      active.onload = null;
+      active.onerror = null;
+      if (active.parentNode) active.parentNode.removeChild(active);
+      active = null;
+    }
+    var endpoint = (root.getAttribute('data-endpoint') || '').trim();
+    var eventKey = (root.getAttribute('data-event') || '').trim();
+    var callbackName = 'btgChampPoll' + (++seq);
+    var url = api.tallyUrl(endpoint, eventKey, callbackName);
+    statusEl.textContent = 'Loading combined results.';
+    setBusy(true);
+    showRetry(false);
+    clearResults();
+    if (!url) {
+      showMessage('Combined results are not connected yet. The poll is open, and counts will appear here after the tally is published.', true);
+      return;
+    }
+    var timer = setTimeout(function () {
+      cleanup();
+      showMessage('Combined results did not load. Try again.', true);
+    }, 25000);
+    function cleanup() {
+      clearTimeout(timer);
+      try { delete window[callbackName]; } catch (e) { window[callbackName] = undefined; }
+      if (active && active.parentNode) active.parentNode.removeChild(active);
+      active = null;
+    }
+    window[callbackName] = function (raw) {
+      cleanup();
+      var payload = api.publicPayload(raw);
+      var state = api.viewState(payload);
+      setBusy(false);
+      if (state === 'error') {
+        showMessage('Combined results are unavailable for this poll.', true);
+        return;
+      }
+      if (state === 'empty') {
+        showMessage('No championship votes yet.', true);
+        summaryEl.textContent = '0 voters.';
+        return;
+      }
+      statusEl.textContent = '';
+      showRetry(true);
+      renderResults(payload);
+    };
+    var script = document.createElement('script');
+    active = script;
+    script.src = url;
+    script.async = true;
+    script.onerror = function () {
+      cleanup();
+      showMessage('Combined results did not load. Try again.', true);
+    };
+    document.head.appendChild(script);
+  }
+  retryBtn.addEventListener('click', load);
+  load();
+})();
+</script>
 <script>
 document.querySelectorAll('.video[data-yt]').forEach(function(v){
   v.addEventListener('click',function(){
