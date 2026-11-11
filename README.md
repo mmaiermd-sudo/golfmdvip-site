@@ -19,3 +19,17 @@ What it inserts:
 The script only inserts those cards. It does not remove existing cards or rewrite other pages (Beat the GolfDoc, athlete pages, NDOS, and the weekly picks page stay as they are). Thumbnails use an `i.ytimg.com` image that returns HTTP 200, falling back to `hqdefault`.
 
 Run it a second time to confirm it adds nothing. YouTube's public RSS feed lists the latest 15 uploads, so a daily run picks up new videos while they are still in that window.
+
+## Beat the GolfDoc team rosters
+
+`scripts/build_btg_team_rosters.py` rebuilds `btg-team-rosters.json` and the "All teams" table on `beat-the-golfdoc.html` (between the `BTG-ALL-TEAMS` markers), so every team shows, including new teams with no graded picks yet. Clicking a team opens its members by call sign.
+
+Inputs are private Google Drive exports of the standings sheet and the weekly responses sheet (never commit them). The public output holds call signs and points only, and the script refuses to write if an email address would end up in it.
+
+```bash
+python3 scripts/build_btg_team_rosters.py --standings /tmp/h1.md \
+  --week "/tmp/w11.md:Form Responses 3" \
+  --form-url "https://docs.google.com/forms/d/e/<form id>/viewform" --extra-team Concentra
+```
+
+Graded stats are carried over from the existing JSON, so a rerun with the same inputs changes nothing but the timestamp.
