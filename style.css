@@ -325,6 +325,11 @@ table.results{width:100%;border-collapse:collapse;background:var(--card);border:
 .avatar.photo{padding:0;overflow:hidden;flex-shrink:0}
 .avatar.photo img{width:100%;height:100%;object-fit:cover;display:block}
 @media (max-width:760px){.cohosts{grid-template-columns:1fr;max-width:340px;margin-left:auto;margin-right:auto}}
+.cohosts.crew{grid-template-columns:repeat(4,1fr);margin-top:18px}
+@media (max-width:980px){.cohosts.crew{grid-template-columns:repeat(2,1fr);max-width:none}}
+@media (max-width:760px){.cohosts.crew{grid-template-columns:1fr;max-width:340px}}
+.cohost-initials{width:160px;height:160px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:var(--head);font-size:3rem;color:var(--gold);background:radial-gradient(circle at 30% 30%,var(--green),var(--green-xdk));border:4px solid var(--gold)}
+.crew-label{text-align:center;margin:36px 0 0}
 /* guest photos (pills + guest list) */
 .glink img.gface{width:22px;height:22px;border-radius:50%;object-fit:cover;flex:0 0 22px;margin:-2px 0 -2px -4px;border:1px solid var(--gold)}
 .guest-list li .gl-face{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:0 0 44px;border:2px solid var(--gold)}
