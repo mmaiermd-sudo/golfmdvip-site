@@ -2,6 +2,8 @@
 
 Static site for [golfmdvip.net](https://golfmdvip.net), published with GitHub Pages from `main`.
 
+GitHub Pages builds this site with Jekyll. A folder whose name starts with an underscore stays in the repo and is not copied to the live site. Do not add a `.nojekyll` file; that would publish those folders.
+
 ## Adding new videos
 
 `scripts/add_new_videos.py` reads the public YouTube RSS feed for [@GoldenHelmetsandGreenJackets](https://www.youtube.com/@GoldenHelmetsandGreenJackets) and inserts any upload whose video id is not already in the site HTML.
