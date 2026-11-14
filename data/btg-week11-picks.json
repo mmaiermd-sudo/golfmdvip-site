@@ -1,0 +1,1155 @@
+{
+ "schema": "btg-picks/1",
+ "week": 11,
+ "label": "Week 11",
+ "date": "20261114",
+ "lock_ct": "2026-11-14 11:00:00",
+ "scoring": {
+  "rule": "1 point per correct call: 5 games against the spread + 3 parlay calls (Agree scores if it hits, Disagree scores if it misses). Max 8. Push = 0.",
+  "points_per_correct_call": 1,
+  "max_points": 8,
+  "push_points": 0,
+  "game": "A pick scores if that side covers: (pick team score - opponent score + spread) > 0; = 0 is a push.",
+  "parlay": "A parlay HITS only if every leg (GolfDoc's side) covers; it MISSES once any leg fails. 'agree' scores on HIT, 'disagree' scores on MISS.",
+  "rank": "Standard competition ranking by points (ties share a rank, shown as T#)."
+ },
+ "scores_feed": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261114&groups=80&limit=400",
+ "games": [
+  {
+   "id": "g1",
+   "game": "Boston College at Notre Dame",
+   "short": "BC at ND",
+   "away": "Boston College",
+   "home": "Notre Dame",
+   "kickoff_utc": "2026-11-14T20:30Z",
+   "kickoff_ct": "2:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Boston College",
+    "spread": 30.5,
+    "text": "Boston College +30.5"
+   },
+   "other_side": {
+    "team": "Notre Dame",
+    "spread": -30.5,
+    "text": "Notre Dame -30.5"
+   }
+  },
+  {
+   "id": "g2",
+   "game": "Missouri at Georgia",
+   "short": "MIZ at UGA",
+   "away": "Missouri",
+   "home": "Georgia",
+   "kickoff_utc": "2026-11-14T20:30Z",
+   "kickoff_ct": "2:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Georgia",
+    "spread": -14.5,
+    "text": "Georgia -14.5"
+   },
+   "other_side": {
+    "team": "Missouri",
+    "spread": 14.5,
+    "text": "Missouri +14.5"
+   }
+  },
+  {
+   "id": "g3",
+   "game": "Texas at LSU",
+   "short": "TEX at LSU",
+   "away": "Texas",
+   "home": "LSU",
+   "kickoff_utc": "2026-11-15T00:30Z",
+   "kickoff_ct": "6:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Texas",
+    "spread": 3.5,
+    "text": "Texas +3.5"
+   },
+   "other_side": {
+    "team": "LSU",
+    "spread": -3.5,
+    "text": "LSU -3.5"
+   }
+  },
+  {
+   "id": "g4",
+   "game": "USC at Indiana",
+   "short": "USC at IU",
+   "away": "USC",
+   "home": "Indiana",
+   "kickoff_utc": "2026-11-14T20:30Z",
+   "kickoff_ct": "2:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "USC",
+    "spread": 7.5,
+    "text": "USC +7.5"
+   },
+   "other_side": {
+    "team": "Indiana",
+    "spread": -7.5,
+    "text": "Indiana -7.5"
+   }
+  },
+  {
+   "id": "g5",
+   "game": "Utah at Arizona",
+   "short": "UTAH at ARIZ",
+   "away": "Utah",
+   "home": "Arizona",
+   "kickoff_utc": "2026-11-15T03:30Z",
+   "kickoff_ct": "9:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Utah",
+    "spread": -2.5,
+    "text": "Utah -2.5"
+   },
+   "other_side": {
+    "team": "Arizona",
+    "spread": 2.5,
+    "text": "Arizona +2.5"
+   }
+  }
+ ],
+ "parlays": [
+  {
+   "parlay": "Fairway Finder",
+   "legs": [
+    "USC +7.5",
+    "Utah -2.5",
+    "Boston College +30.5"
+   ]
+  },
+  {
+   "parlay": "GolfDoc Special",
+   "legs": [
+    "USC +7.5",
+    "Utah -2.5",
+    "Boston College +30.5",
+    "Georgia -14.5"
+   ]
+  },
+  {
+   "parlay": "Golden Domer",
+   "legs": [
+    "USC +7.5",
+    "Utah -2.5",
+    "Boston College +30.5",
+    "Georgia -14.5",
+    "Texas +3.5"
+   ]
+  }
+ ],
+ "entries": [
+  {
+   "call_sign": "Apple",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "B Hardy",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Big D",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Big Dawg Sanford",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Bloops",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "BMG",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "BOB Burnt Orange Boys",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "CDog",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Chilly's Prize Pix",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "CMoore",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "cmuell",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Colton",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Cuban's Doc",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Dirty Joe",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Dr AK21",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Dr. Stag",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "E",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "El Presidente",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Epic Picks",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Farmboy",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "GOLFDOC",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "GOOSE",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Great Dane",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Haak Attack",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Herb",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Hilda",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Honey Badger",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Hurbie",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Josh",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "kdawg",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "King Of The Castle",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Lizzie J",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Local George",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Loondawg",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "LSU knife/gun club",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Matty “The Bull” Gravano",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "MonkeyD_Luffy3",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "MP",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Operator 1",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Petpad",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "putman",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Missouri +14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Righteous Anatomicity",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Ronsboys",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Rosa",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Saint/Tiger",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Sandstorm Spur",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "SBM",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "SHK",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "SJR",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Sruthi",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Stark Naked",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Sunshine",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Missouri +14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "TBO",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Team Cignetti",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Tennis wizard",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Texas Hoss",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "The Cuban Doc",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "The Friendly Leprechaun ☘️",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "The Goat 🐐",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "The Only Colors",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "The Saturday Surgeon",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Tito",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Tosin",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Turkey",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "LSU -3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Uncle Buck",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Georgia -14.5",
+    "g3": "LSU -3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Arizona +2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Vince Young",
+   "picks": {
+    "g1": "Boston College +30.5",
+    "g2": "Missouri +14.5",
+    "g3": "Texas +3.5",
+    "g4": "USC +7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Weldo",
+   "picks": {
+    "g1": "Notre Dame -30.5",
+    "g2": "Georgia -14.5",
+    "g3": "Texas +3.5",
+    "g4": "Indiana -7.5",
+    "g5": "Utah -2.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  }
+ ]
+}

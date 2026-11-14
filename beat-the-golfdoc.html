@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Beat the GolfDoc | Golden Helmets &amp; Green Jackets Podcast</title>
-<meta name="description" content="Beat the GolfDoc Week 11 contest and championship poll, plus Week 10 results and season standings. Just for bragging rights!">
+<meta name="description" content="Beat the GolfDoc Week 11 live leaderboard, contest, and championship poll, plus Week 10 results and season standings. Just for bragging rights!">
 <meta property="og:title" content="Beat the GolfDoc | Golden Helmets &amp; Green Jackets Podcast">
-<meta property="og:description" content="Beat the GolfDoc Week 11 contest and championship poll, plus Week 10 results and season standings. Just for bragging rights!">
+<meta property="og:description" content="Beat the GolfDoc Week 11 live leaderboard, contest, and championship poll, plus Week 10 results and season standings. Just for bragging rights!">
 <meta property="og:image" content="img/banner_full.jpg">
 <meta name="theme-color" content="#062218">
 <link rel="icon" href="img/avatar_192.png">
@@ -47,6 +47,49 @@
 .btg-roster-table td{padding:8px 8px;border-bottom:1px solid rgba(6,34,24,.1);vertical-align:top}
 .btg-roster-table tr:last-child td{border-bottom:0}
 .btg-roster-empty{margin:8px 0 0;color:var(--muted)}
+
+/* Weekly live leaderboard. Week data lives in data/btg-live-week.json. */
+#live{scroll-margin-top:84px}
+.btg-live{margin:28px 0 10px;background:var(--green-xdk);color:#E9F2EC;border:2px solid rgba(201,151,0,.6);border-radius:16px;padding:18px 16px 16px;box-shadow:var(--shadow)}
+.btg-live h2{color:var(--gold);margin:0}
+.btg-live .eyebrow{color:var(--gold-lt)}
+.btg-live-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.btg-live-asof{margin:6px 0 0;color:#BFD3C8;font-size:.92rem}
+.btg-live-refresh{appearance:none;background:transparent;color:var(--gold-lt);border:1px solid var(--gold);border-radius:999px;padding:8px 14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btg-live-refresh:hover,.btg-live-refresh:focus-visible{background:var(--gold);color:var(--green-xdk);outline:2px solid var(--gold-lt);outline-offset:2px}
+.btg-live-refresh:disabled{opacity:.6;cursor:wait}
+.btg-live-counter{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin:14px 0 12px;font-family:Oswald,Inter,sans-serif;font-size:clamp(1.25rem,3vw,1.8rem);line-height:1.2;color:#fff;text-transform:uppercase}
+.btg-live-counter span{color:var(--gold-lt)}
+.btg-live-counter small{font-family:Inter,sans-serif;font-size:.95rem;letter-spacing:0;text-transform:none;color:#E9F2EC;font-weight:600}
+.btg-live-games{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+@media (max-width:980px){
+  .btg-live-games{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+  .btg-live-game{flex:0 0 min(78vw,240px);scroll-snap-align:start}
+}
+.btg-live-game{background:#0D3325;border:1px solid #1E4A39;border-radius:12px;padding:10px 12px}
+.btg-live-game h3{margin:0;font-size:1.05rem;color:#fff}
+.btg-live-match,.btg-live-pick,.btg-live-when,.btg-live-score,.btg-live-cover{margin:3px 0 0;font-size:.84rem;line-height:1.35}
+.btg-live-match{color:#BFD3C8}
+.btg-live-pick{color:var(--gold-lt)}
+.btg-live-score{font-weight:700;color:#fff;font-variant-numeric:tabular-nums}
+.btg-live-cover[data-cover="cover"]{color:#B7E4C7}
+.btg-live-cover[data-cover="fail"]{color:#F3C1B8}
+.btg-live-cover[data-cover="push"]{color:var(--gold-lt)}
+.btg-live-cover[data-cover="pending"]{color:#BFD3C8}
+.btg-live-parlays{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.btg-live-parlay{margin:0;background:#0D3325;border:1px solid #1E4A39;border-radius:999px;padding:6px 12px;font-size:.84rem}
+.btg-live-parlay strong{color:var(--gold-lt);font-weight:600}
+.btg-live-search{display:block;margin:14px 0 6px;color:var(--gold-lt);font-size:.82rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.btg-live-search input{display:block;width:100%;margin-top:6px;box-sizing:border-box;font-family:Inter,sans-serif;font-size:1rem;font-weight:500;letter-spacing:0;text-transform:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.btg-live-fine{margin:6px 0 0;color:#BFD3C8;font-size:.84rem}
+.btg-live-scroll{overflow:auto;max-height:70vh;margin-top:8px;border:1px solid #1E4A39;border-radius:12px;background:#0A2A1E;-webkit-overflow-scrolling:touch}
+.btg-live-table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:560px}
+.btg-live-table caption{caption-side:bottom;text-align:left;padding:8px 10px;color:#BFD3C8;font-size:.8rem}
+.btg-live-table th{position:sticky;top:0;background:#0D3325;color:var(--gold);text-align:left;padding:8px 10px;border-bottom:2px solid var(--gold);z-index:1}
+.btg-live-table td{padding:7px 10px;border-bottom:1px solid rgba(255,255,255,.08);vertical-align:top}
+.btg-live-table td:nth-child(2){font-weight:600}
+.btg-live-table tr.btg-live-ahead td{background:rgba(201,151,0,.1)}
+.btg-live-table tr.btg-live-gd td{background:rgba(201,151,0,.22)}
 </style>
 </head>
 <body>
@@ -61,9 +104,44 @@
 <span class="eyebrow" style="display:block;margin-top:24px">Free weekly picks contest</span><h1>Beat the GolfDoc</h1>
 <p>Think you can out-pick the GolfDoc? Each week, take GolfDoc's 5-game college football slate against the spread, then make your bonus calls on the <strong>Fairway Finder</strong>, <strong>GolfDoc Special</strong> and <strong>Golden Domer</strong> parlays, <strong>Cade's Turkey Triple</strong>, and the <strong>Matty Ice Lock</strong>. It's free to play, for bragging rights only.</p>
 <p style="font-size:1.1rem"><strong>Winners will be considered for guest cameo appearances on future episodes with the GolfDoc, Cade, Matty Ice and Brandon.</strong></p>
-<div class="btns" style="margin:22px 0 8px"><a class="btn btn-outline" href="picks.html">See GolfDoc&#x27;s Weekly Picks</a></div>
+<div class="btns" style="margin:22px 0 8px"><a class="btn btn-gold" href="#live">Live leaderboard</a><a class="btn btn-outline" href="picks.html">See GolfDoc&#x27;s Weekly Picks</a></div>
+<div id="live" class="btg-live" data-pointer="data/btg-live-week.json">
+  <div class="btg-live-top">
+    <div>
+      <span class="eyebrow">This week only</span>
+      <h2 data-btg-live="title">Live leaderboard</h2>
+      <p class="btg-live-asof" data-btg-live="asof" role="status">Loading scores…</p>
+    </div>
+    <button type="button" class="btg-live-refresh" data-btg-live="refresh">Refresh</button>
+  </div>
+  <p class="btg-live-counter" data-btg-live="counter" aria-live="polite"></p>
+  <div class="btg-live-games" data-btg-live="games"></div>
+  <div class="btg-live-parlays" data-btg-live="parlays"></div>
+  <label class="btg-live-search" for="btg-live-filter">Search call signs
+    <input id="btg-live-filter" data-btg-live="filter" type="search" placeholder="Type a call sign" autocomplete="off" enterkeyhint="search">
+  </label>
+  <p class="btg-live-fine" data-btg-live="filter-count" aria-live="polite"></p>
+  <div class="btg-live-scroll">
+    <table class="btg-live-table">
+      <caption>Week 11 individual standings. Call signs only.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Rank</th>
+          <th scope="col">Call sign</th>
+          <th scope="col">Pts</th>
+          <th scope="col" title="Points if the current scores hold. Unofficial until the game is final.">LIVE*</th>
+          <th scope="col">Max</th>
+          <th scope="col">vs GolfDoc</th>
+        </tr>
+      </thead>
+      <tbody data-btg-live="rows"></tbody>
+    </table>
+  </div>
+  <p class="btg-live-fine btg-live-note" data-btg-live="note">Call signs only. Names and email addresses are not shown.</p>
+  <noscript><p>The live leaderboard needs JavaScript to load scores.</p></noscript>
+</div>
 <h2 style="margin-top:36px">How it works</h2>
-<ol><li>Open the entry form and pick each of the 5 games against the spread.</li><li>Make your bonus calls: Fairway Finder, GolfDoc Special, Golden Domer, Cade&#x27;s Turkey Triple and the Matty Ice Lock.</li><li>Submit before kickoff, then check the leaderboard to see if you beat the GolfDoc.</li></ol>
+<ol><li>Open the entry form and pick each of the 5 games against the spread.</li><li>Make your bonus calls: Fairway Finder, GolfDoc Special, Golden Domer, Cade&#x27;s Turkey Triple and the Matty Ice Lock.</li><li>Submit before kickoff, then check the <a href="#live">live leaderboard</a> to see if you beat the GolfDoc.</li></ol>
 <h2 id="week-11" style="margin-top:36px">Week 11 contest</h2>
 <p id="w11-lock-note">Week 11 picks lock Saturday, Nov 14, 2026 at 11:00 a.m. CST. The championship poll below stays open after that lock.</p>
 <div class="btns" id="w11-contest-actions"><a class="btn btn-gold" id="w11-contest-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdhBT1dN-j_DGhNiN7yKJvN9QMfVSRvFfeab8PSXm0g0U7CCg/viewform" target="_blank" rel="noopener">Enter Week 11</a></div>
@@ -670,6 +748,8 @@
   });
 })();
 </script>
+<script src="btg-live.js"></script>
+<script>if (window.BTGLive) BTGLive.start();</script>
 <script>
 document.querySelectorAll('.video[data-yt]').forEach(function(v){
   v.addEventListener('click',function(){

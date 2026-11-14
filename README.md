@@ -33,3 +33,15 @@ python3 scripts/build_btg_team_rosters.py --standings /tmp/h1.md \
 ```
 
 Graded stats are carried over from the existing JSON, so a rerun with the same inputs changes nothing but the timestamp.
+
+## Beat the GolfDoc live leaderboard
+
+The weekly board on `beat-the-golfdoc.html#live` is filled in the browser. It reads `data/btg-live-week.json`, then the picks file that pointer names, then the ESPN scoreboard URL inside that picks file. Official points count only after a game is final. The page refreshes about every 90 seconds. Call signs only: do not put names or email addresses in these files.
+
+To roll to a new week, replace the picks file and point the pointer at it. Nothing else on the page has to change.
+
+1. Add `data/btg-week12-picks.json` using the same shape as `data/btg-week11-picks.json` (games with GolfDoc's side and spread, parlays and their legs, scoring, `scores_feed`, and entries of call sign + picks + parlay agree/disagree).
+2. Edit `data/btg-live-week.json` so `picks` is `data/btg-week12-picks.json` and `week` / `label` match.
+3. Optional: replace `data/btg-live.json` if you want a same-site snapshot for when the ESPN scoreboard cannot be read from the browser. The page then says scores update periodically. Leave the pointer's `snapshot` path as-is, or change it to the new file.
+
+`node btg-live.test.js` checks the grader. A push scores 0. A parlay hits only when every GolfDoc leg covers, and it misses once any leg fails.
