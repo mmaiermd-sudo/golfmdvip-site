@@ -104,6 +104,13 @@
 <span class="eyebrow" style="display:block;margin-top:24px">Free weekly picks contest</span><h1>Beat the GolfDoc</h1>
 <p>Think you can out-pick the GolfDoc? Each week, take GolfDoc's 5-game college football slate against the spread, then make your bonus calls on the <strong>Fairway Finder</strong>, <strong>GolfDoc Special</strong> and <strong>Golden Domer</strong> parlays, <strong>Cade's Turkey Triple</strong>, and the <strong>Matty Ice Lock</strong>. It's free to play, for bragging rights only.</p>
 <p style="font-size:1.1rem"><strong>Winners will be considered for guest cameo appearances on future episodes with the GolfDoc, Cade, Matty Ice and Brandon.</strong></p>
+<div class="btg-shout" id="week-11-winners">
+  <span class="eyebrow">Week 11 winners</span>
+  <h2>Perfect 8 for 8</h2>
+  <p class="btg-shout-winners">kdawg &amp; Team Cignetti</p>
+  <p><strong>kdawg</strong> and <strong>Team Cignetti</strong> both went a perfect <strong>8 for 8</strong> in Week 11. Three players tied at 7, and <strong>53 of 67</strong> beat GolfDoc, who scored 2.</p>
+  <p><a href="#week-11-results">See the Week 11 results and season standings</a></p>
+</div>
 <div class="btns" style="margin:22px 0 8px"><a class="btn btn-gold" href="#live">Live leaderboard</a><a class="btn btn-outline" href="picks.html">See GolfDoc&#x27;s Weekly Picks</a></div>
 <div id="live" class="btg-live" data-pointer="data/btg-live-week.json">
   <div class="btg-live-top">
@@ -165,7 +172,7 @@
 </div>
 </div>
 </div>
-<h2 style="margin-top:36px">Week 11 results</h2>
+<h2 id="week-11-results" style="margin-top:36px">Week 11 results</h2>
 <p style="opacity:.85">Updated Sun Nov 15, 2026. <strong>kdawg</strong> and <strong>Team Cignetti</strong> both went a perfect <strong>8 for 8</strong> in Week 11. Three players tied at 7. GolfDoc scored <strong>2</strong>; <strong>53 of 67</strong> contestants beat him. GolfDoc&#x27;s 2026 picks record: <strong>31-24-0</strong> (Week 11: 2-3). Season rank is average points per week played.</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;align-items:start">
 <div><img src="img/btg/BTGD_Header_Weekly_Results_1600x400.png" alt="Week 11 results" style="width:100%;border-radius:12px;display:block;margin:0 0 10px"><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:.95rem"><thead><tr><th style="padding:8px 10px;text-align:left;color:var(--gold);border-bottom:2px solid var(--gold)">Rank</th><th style="padding:8px 10px;text-align:left;color:var(--gold);border-bottom:2px solid var(--gold)">Call sign</th><th style="padding:8px 10px;text-align:left;color:var(--gold);border-bottom:2px solid var(--gold)">Pts</th><th style="padding:8px 10px;text-align:left;color:var(--gold);border-bottom:2px solid var(--gold)">vs GolfDoc</th></tr></thead><tbody>
@@ -514,16 +521,6 @@
 <script src="btg-champ-poll.js"></script>
 <script>
 (function () {
-  var lockAt = Date.parse('2026-11-14T17:00:00Z');
-  var contestLink = document.getElementById('w11-contest-link');
-  var lockNote = document.getElementById('w11-lock-note');
-  if (contestLink && isFinite(lockAt) && Date.now() >= lockAt) {
-    contestLink.textContent = 'Week 11 picks are locked';
-    contestLink.classList.add('disabled');
-    contestLink.setAttribute('aria-disabled', 'true');
-    contestLink.removeAttribute('href');
-    if (lockNote) lockNote.textContent = 'Week 11 contest picks locked Saturday, Nov 14, 2026 at 11:00 a.m. CST. The championship poll stays open.';
-  }
 
   var root = document.getElementById('champ-poll');
   var statusEl = document.getElementById('champ-status');

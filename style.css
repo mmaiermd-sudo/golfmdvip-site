@@ -341,3 +341,17 @@ table.results{width:100%;border-collapse:collapse;background:var(--card);border:
 
 .friend-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 12px;border:3px solid #0c2340}
 .friend-card h3{text-align:center}
+
+/* Beat the GolfDoc Week 11 winners shout-out */
+.btg-shout{margin:24px 0 8px;padding:22px 24px 20px;border-radius:14px;border:2px solid var(--gold);background:linear-gradient(135deg,var(--green-dk),var(--green));color:#E9F2EC;box-shadow:var(--shadow)}
+.btg-shout .eyebrow{color:var(--gold-lt)}
+.btg-shout h2{color:var(--gold);margin:2px 0 8px;font-size:clamp(1.6rem,3vw,2.1rem)}
+.btg-shout .btg-shout-winners{margin:0 0 8px;font-family:var(--head);font-size:clamp(1.25rem,2.4vw,1.7rem);color:#fff;letter-spacing:.02em;text-transform:uppercase}
+.btg-shout p{margin:0 0 10px;color:#E9F2EC}
+.btg-shout p:last-child{margin-bottom:0}
+.btg-shout a{color:var(--gold-lt);font-weight:700}
+.btg-shout a:hover{color:#fff}
+.btg-shout--home{margin:0 0 16px;padding:16px 18px}
+.btg-shout--home h2{font-size:1.35rem;margin:0 0 6px}
+.btg-shout--home .btg-shout-winners{font-size:1.15rem}
+#week-11-results,#week-11-winners{scroll-margin-top:84px}
