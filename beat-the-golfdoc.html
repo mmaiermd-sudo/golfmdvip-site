@@ -758,6 +758,37 @@
 <script src="btg-live.js"></script>
 <script>if (window.BTGLive) BTGLive.start();</script>
 <script>
+(function () {
+  var hash = location.hash;
+  if (hash !== '#week-11-results' && hash !== '#week-11-winners') return;
+  var target = document.querySelector(hash);
+  var live = document.getElementById('live');
+  if (!target) return;
+  function align() {
+    target.scrollIntoView({ block: 'start', behavior: 'auto' });
+  }
+  if (!live || typeof ResizeObserver !== 'function') {
+    window.addEventListener('load', align);
+    return;
+  }
+  var height = live.getBoundingClientRect().height;
+  var observer = new ResizeObserver(function () {
+    var next = live.getBoundingClientRect().height;
+    if (next === height) return;
+    height = next;
+    align();
+  });
+  observer.observe(live);
+  window.addEventListener('load', function () {
+    align();
+    window.setTimeout(function () {
+      observer.disconnect();
+      align();
+    }, 1600);
+  });
+})();
+</script>
+<script>
 document.querySelectorAll('.video[data-yt]').forEach(function(v){
   v.addEventListener('click',function(){
     if(v.querySelector('iframe'))return;
