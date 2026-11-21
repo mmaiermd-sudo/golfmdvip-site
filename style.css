@@ -262,6 +262,15 @@ table.results{width:100%;border-collapse:collapse;background:var(--card);border:
 .guest-list .glink{flex:0 0 auto}
 @media (max-width:620px){.guest-list{grid-template-columns:1fr}}
 
+/* team physician */
+.physician-wrap{max-width:900px;margin:26px auto 0}
+.physician-card{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:start;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--green);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.physician-card figure{margin:0}
+.physician-card img{width:150px;height:162px;object-fit:cover;border-radius:10px;display:block}
+.physician-card figcaption{font-size:11.5px;color:var(--muted);margin-top:4px}
+.physician-card h3{margin:2px 0 0;color:var(--green-dk)}
+.physician-card .role{font-size:14px;color:var(--gold-dk);font-weight:600;margin-bottom:8px}
+@media (max-width:620px){.physician-card{grid-template-columns:1fr}.physician-card img{width:120px;height:130px}}
 /* NDOS hub */
 .ndos-years{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:18px}
 .ndos-year{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-top:5px solid var(--green);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);transition:transform .15s}
