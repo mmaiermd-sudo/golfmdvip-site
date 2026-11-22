@@ -1,0 +1,1065 @@
+{
+ "schema": "btg-picks/1",
+ "week": 12,
+ "label": "Week 12",
+ "date": "20261121",
+ "lock_ct": "2026-11-21 11:00:00",
+ "scoring": {
+  "rule": "1 point per correct call: 5 games against the spread + 3 parlay calls (Agree scores if it hits, Disagree scores if it misses). Max 8. Push = 0.",
+  "points_per_correct_call": 1,
+  "max_points": 8,
+  "push_points": 0,
+  "game": "A pick scores if that side covers: (pick team score - opponent score + spread) > 0; = 0 is a push.",
+  "parlay": "A parlay HITS only if every leg (GolfDoc's side) covers; it MISSES once any leg fails. 'agree' scores on HIT, 'disagree' scores on MISS.",
+  "rank": "Standard competition ranking by points (ties share a rank, shown as T#)."
+ },
+ "scores_feed": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261121&groups=80&limit=400",
+ "games": [
+  {
+   "id": "g1",
+   "game": "UCLA at Michigan",
+   "short": "UCLA at MICH",
+   "away": "UCLA",
+   "home": "Michigan",
+   "kickoff_utc": "2026-11-21T20:30Z",
+   "kickoff_ct": "2:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "UCLA",
+    "spread": -6.5,
+    "text": "UCLA -6.5"
+   },
+   "other_side": {
+    "team": "Michigan",
+    "spread": 6.5,
+    "text": "Michigan +6.5"
+   }
+  },
+  {
+   "id": "g2",
+   "game": "Texas Tech at Baylor",
+   "short": "TTU at BAY",
+   "away": "Texas Tech",
+   "home": "Baylor",
+   "kickoff_utc": "2026-11-21T20:30Z",
+   "kickoff_ct": "2:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Texas Tech",
+    "spread": -3.5,
+    "text": "Texas Tech -3.5"
+   },
+   "other_side": {
+    "team": "Baylor",
+    "spread": 3.5,
+    "text": "Baylor +3.5"
+   }
+  },
+  {
+   "id": "g3",
+   "game": "Indiana at Washington",
+   "short": "IU at UW",
+   "away": "Indiana",
+   "home": "Washington",
+   "kickoff_utc": "2026-11-21T20:30Z",
+   "kickoff_ct": "2:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Washington",
+    "spread": 7.5,
+    "text": "Washington +7.5"
+   },
+   "other_side": {
+    "team": "Indiana",
+    "spread": -7.5,
+    "text": "Indiana -7.5"
+   }
+  },
+  {
+   "id": "g4",
+   "game": "SMU at Notre Dame",
+   "short": "SMU at ND",
+   "away": "SMU",
+   "home": "Notre Dame",
+   "kickoff_utc": "2026-11-22T00:30Z",
+   "kickoff_ct": "6:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Notre Dame",
+    "spread": -19.5,
+    "text": "Notre Dame -19.5"
+   },
+   "other_side": {
+    "team": "SMU",
+    "spread": 19.5,
+    "text": "SMU +19.5"
+   }
+  },
+  {
+   "id": "g5",
+   "game": "Georgia at South Carolina",
+   "short": "UGA at SC",
+   "away": "Georgia",
+   "home": "South Carolina",
+   "kickoff_utc": "2026-11-22T00:30Z",
+   "kickoff_ct": "6:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Georgia",
+    "spread": -16.5,
+    "text": "Georgia -16.5"
+   },
+   "other_side": {
+    "team": "South Carolina",
+    "spread": 16.5,
+    "text": "South Carolina +16.5"
+   }
+  }
+ ],
+ "parlays": [
+  {
+   "parlay": "Fairway Finder",
+   "legs": [
+    "UCLA -6.5",
+    "Georgia -16.5",
+    "Texas Tech -3.5"
+   ]
+  },
+  {
+   "parlay": "GolfDoc Special",
+   "legs": [
+    "UCLA -6.5",
+    "Georgia -16.5",
+    "Texas Tech -3.5",
+    "Washington +7.5"
+   ]
+  },
+  {
+   "parlay": "Golden Domer",
+   "legs": [
+    "UCLA -6.5",
+    "Georgia -16.5",
+    "Texas Tech -3.5",
+    "Washington +7.5",
+    "Notre Dame -19.5"
+   ]
+  }
+ ],
+ "entries": [
+  {
+   "call_sign": "GOLFDOC",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "El Presidente",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Ronsboys",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Operator 1",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "CDog",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "LSU knife/gun club",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Team Cignetti",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "The Cuban Doc",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "The Only Colors",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Petpad",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "GOIRISH",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "The Goat 🐐",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Texas Hoss",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Herb",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Baylor +3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Haak Attack",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Turkey",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "SMU +19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Dirty Joe",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Uncle Buck",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "TBO",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Honey Badger",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "GOOSE",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "The Saturday Surgeon",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Hurbie",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Chilly’s Prize Pix",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "putman",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Boomer",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "SMU +19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Hollywood",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Megatron",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Dr AK21",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Epic Picks",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Baylor +3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "kdawg",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "E",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Loondawg",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "SMU +19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Great Dane",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "River Rat",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Dr. Stag",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "SBM",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "DBREEZY",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Big Dawg Sanford",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "TommyBoy",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Colton",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Ham because what is yam",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Baylor +3.5",
+    "g3": "Washington +7.5",
+    "g4": "SMU +19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "SB10",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Righteous Anatomicity",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Big D",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "The ZTW Show",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Baylor +3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Stark Naked",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Farmvoy",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "King Of The Castle",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Jim",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "CMoore",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Industrial Rehab",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Viewshk",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Weldo",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "BOB Burnt Orange Boys",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Tennis wizard",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Sruthi",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Sunshine",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "SJR",
+   "picks": {
+    "g1": "UCLA -6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "SUPERDAVE",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Indiana -7.5",
+    "g4": "Notre Dame -19.5",
+    "g5": "South Carolina +16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Tosin",
+   "picks": {
+    "g1": "Michigan +6.5",
+    "g2": "Texas Tech -3.5",
+    "g3": "Washington +7.5",
+    "g4": "SMU +19.5",
+    "g5": "Georgia -16.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  }
+ ]
+}
