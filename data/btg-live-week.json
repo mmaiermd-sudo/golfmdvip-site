@@ -1,7 +1,7 @@
 {
   "schema": "btg-live-week/1",
-  "week": 11,
-  "label": "Week 11",
-  "picks": "data/btg-week11-picks.json",
-  "snapshot": "data/btg-live.json"
+  "week": 12,
+  "label": "Week 12",
+  "picks": "data/btg-week12-picks.json",
+  "snapshot": "data/btg-live-week12.json"
 }
