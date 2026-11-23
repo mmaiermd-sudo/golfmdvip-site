@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-11T19:07:17Z",
- "source": "H1 standings sheet (Team Roster, aliases, W9/W10 responses) + weekly form responses + live form team list; graded stats carried from previous build",
+ "generated_at": "2026-11-23T00:57:11Z",
+ "source": "H1 standings sheet (Team Roster, aliases, W9/W10 responses) + Week 11 and Week 12 form responses + live form team list; player and team stats from the Week 12 final season build (Weeks 9-12)",
  "privacy": "call signs and public points only; no names, emails, phone numbers or raw sheet rows",
  "stats": {
-  "teams": 49,
-  "graded_teams": 41,
-  "players": 105
+  "teams": 53,
+  "graded_teams": 51,
+  "players": 120
  },
  "aliases": {
   "argo": "ARGOS",
@@ -28,98 +28,150 @@
    "season_avg": "3.50",
    "players": [
     {
-     "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
+     "call_sign": "BMG",
+     "season_avg": 4.0,
+     "total_points": 8,
      "weeks_played": 2,
-     "week10_points": 3
+     "week12_points": null
     },
     {
-     "call_sign": "BMG"
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Baylor Staff": {
    "name": "Baylor Staff",
    "count": 3,
    "graded": true,
-   "season_avg": "4.00",
+   "season_avg": "3.62",
    "players": [
     {
      "call_sign": "Bowl movements",
-     "season_avg": 6,
+     "season_avg": 6.0,
      "total_points": 6,
      "weeks_played": 1,
-     "week10_points": 6
-    },
-    {
-     "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
+     "week12_points": null
     },
     {
      "call_sign": "Ham because what is yam",
-     "season_avg": 3,
-     "total_points": 3,
-     "weeks_played": 1,
-     "week10_points": 3
+     "season_avg": 3.33,
+     "total_points": 10,
+     "weeks_played": 3,
+     "week12_points": 4
+    },
+    {
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
+  },
+  "Big Blue PTs": {
+   "name": "Big Blue PTs",
+   "count": 1,
+   "graded": true,
+   "season_avg": "4.00",
+   "players": [
+    {
+     "call_sign": "Jim",
+     "season_avg": 4.0,
+     "total_points": 4,
+     "weeks_played": 1,
+     "week12_points": 4
+    }
+   ],
+   "season_weeks": 1
   },
   "Black Hawk": {
    "name": "Black Hawk",
    "count": 5,
    "graded": true,
-   "season_avg": "4.50",
+   "season_avg": "4.17",
    "players": [
     {
-     "call_sign": "CMUEL$$$",
-     "season_avg": 4.5,
-     "total_points": 9,
-     "weeks_played": 2,
-     "week10_points": 5
+     "call_sign": "Mitch",
+     "season_avg": 6.0,
+     "total_points": 6,
+     "weeks_played": 1,
+     "week12_points": null
+    },
+    {
+     "call_sign": "cmuell",
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": null
     },
     {
      "call_sign": "Sunshine",
-     "season_avg": 4.5,
-     "total_points": 9,
+     "season_avg": 4.75,
+     "total_points": 19,
+     "weeks_played": 4,
+     "week12_points": 5
+    },
+    {
+     "call_sign": "BMG",
+     "season_avg": 4.0,
+     "total_points": 8,
      "weeks_played": 2,
-     "week10_points": 2
+     "week12_points": null
     },
     {
      "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
-    },
-    {
-     "call_sign": "BMG"
-    },
-    {
-     "call_sign": "Mitch"
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Cade's OKIE Homies": {
    "name": "Cade's OKIE Homies",
-   "count": 0,
-   "graded": false,
-   "season_avg": null,
-   "players": []
+   "count": 2,
+   "graded": true,
+   "season_avg": "6.00",
+   "players": [
+    {
+     "call_sign": "Boomer",
+     "season_avg": 5.5,
+     "total_points": 11,
+     "weeks_played": 2,
+     "week12_points": 6
+    },
+    {
+     "call_sign": "Turkey",
+     "season_avg": 4.5,
+     "total_points": 18,
+     "weeks_played": 4,
+     "week12_points": 6
+    }
+   ],
+   "season_weeks": 1
   },
   "Concentra": {
    "name": "Concentra",
    "count": 1,
-   "graded": false,
-   "season_avg": null,
+   "graded": true,
+   "season_avg": "2.00",
    "players": [
     {
-     "call_sign": "Hilda"
+     "call_sign": "Hilda",
+     "season_avg": 2.0,
+     "total_points": 2,
+     "weeks_played": 1,
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 1
   },
   "Detiveaux's": {
    "name": "Detiveaux's",
@@ -129,107 +181,119 @@
    "players": [
     {
      "call_sign": "Red raiders natty",
-     "season_avg": 4,
+     "season_avg": 4.0,
      "total_points": 4,
      "weeks_played": 1,
-     "week10_points": 4
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 1
   },
   "DNA": {
    "name": "DNA",
-   "count": 1,
+   "count": 2,
    "graded": true,
    "season_avg": "4.00",
    "players": [
     {
-     "call_sign": "Big D",
-     "season_avg": 4,
-     "total_points": 4,
+     "call_sign": "DBREEZY",
+     "season_avg": 5.0,
+     "total_points": 5,
      "weeks_played": 1,
-     "week10_points": 4
+     "week12_points": 5
+    },
+    {
+     "call_sign": "Big D",
+     "season_avg": 4.33,
+     "total_points": 13,
+     "weeks_played": 3,
+     "week12_points": 7
     }
-   ]
+   ],
+   "season_weeks": 3
   },
   "Doerre Warriors": {
    "name": "Doerre Warriors",
    "count": 4,
    "graded": true,
-   "season_avg": "5.08",
+   "season_avg": "5.13",
    "players": [
     {
+     "call_sign": "Texas Hoss",
+     "season_avg": 6.0,
+     "total_points": 24,
+     "weeks_played": 4,
+     "week12_points": 7
+    },
+    {
      "call_sign": "BOB Burnt Orange Boys",
-     "season_avg": 6,
-     "total_points": 6,
-     "weeks_played": 1,
-     "week10_points": 6
+     "season_avg": 5.0,
+     "total_points": 15,
+     "weeks_played": 3,
+     "week12_points": 4
     },
     {
      "call_sign": "Stark Naked",
-     "season_avg": 6,
-     "total_points": 6,
-     "weeks_played": 1,
-     "week10_points": 6
-    },
-    {
-     "call_sign": "Texas Hoss",
-     "season_avg": 5.5,
-     "total_points": 11,
-     "weeks_played": 2,
-     "week10_points": 5
+     "season_avg": 5.0,
+     "total_points": 15,
+     "weeks_played": 3,
+     "week12_points": 5
     },
     {
      "call_sign": "Trauma Queen 💁🏻‍♀️",
-     "season_avg": 3,
+     "season_avg": 3.0,
      "total_points": 3,
      "weeks_played": 1,
-     "week10_points": null
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Dub Enterprises": {
    "name": "Dub Enterprises",
    "count": 1,
    "graded": true,
-   "season_avg": "4.00",
+   "season_avg": "4.33",
    "players": [
     {
      "call_sign": "Colton",
-     "season_avg": 4,
-     "total_points": 4,
-     "weeks_played": 1,
-     "week10_points": 4
+     "season_avg": 4.33,
+     "total_points": 13,
+     "weeks_played": 3,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 3
   },
   "Duke Ortho": {
    "name": "Duke Ortho",
    "count": 3,
    "graded": true,
-   "season_avg": "5.00",
+   "season_avg": "4.50",
    "players": [
     {
      "call_sign": "Great Dane",
-     "season_avg": 6.5,
-     "total_points": 13,
-     "weeks_played": 2,
-     "week10_points": 6
+     "season_avg": 5.75,
+     "total_points": 23,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
      "call_sign": "Loondawg",
-     "season_avg": 6,
-     "total_points": 6,
-     "weeks_played": 1,
-     "week10_points": 6
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": 5
     },
     {
      "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Eschenbach's Family": {
    "name": "Eschenbach's Family",
@@ -239,78 +303,97 @@
    "players": [
     {
      "call_sign": "Kiki",
-     "season_avg": 6,
+     "season_avg": 6.0,
      "total_points": 6,
      "weeks_played": 1,
-     "week10_points": 6
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 1
   },
   "George Ranch Golf": {
    "name": "George Ranch Golf",
    "count": 4,
-   "graded": false,
-   "season_avg": null,
+   "graded": true,
+   "season_avg": "5.00",
    "players": [
     {
-     "call_sign": "BMG"
+     "call_sign": "Mitch",
+     "season_avg": 6.0,
+     "total_points": 6,
+     "weeks_played": 1,
+     "week12_points": null
     },
     {
-     "call_sign": "Matty “The Bull” Gravano"
+     "call_sign": "Matty “The Bull” Gravano",
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": null
     },
     {
-     "call_sign": "Mitch"
+     "call_sign": "BMG",
+     "season_avg": 4.0,
+     "total_points": 8,
+     "weeks_played": 2,
+     "week12_points": null
     },
     {
-     "call_sign": "The ZTW Show"
+     "call_sign": "The ZTW Show",
+     "season_avg": 3.5,
+     "total_points": 7,
+     "weeks_played": 2,
+     "week12_points": 3
     }
-   ]
+   ],
+   "season_weeks": 3
   },
   "GHGJ Staff": {
    "name": "GHGJ Staff",
    "count": 6,
    "graded": true,
-   "season_avg": "4.10",
+   "season_avg": "4.30",
    "players": [
     {
      "call_sign": "Matty “The Bull” Gravano",
-     "season_avg": 6.5,
-     "total_points": 13,
-     "weeks_played": 2,
-     "week10_points": 8
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": null
     },
     {
      "call_sign": "The Saturday Surgeon",
-     "season_avg": 5,
-     "total_points": 10,
-     "weeks_played": 2,
-     "week10_points": 5
+     "season_avg": 4.75,
+     "total_points": 19,
+     "weeks_played": 4,
+     "week12_points": 7
     },
     {
      "call_sign": "Turkey",
-     "season_avg": 5,
-     "total_points": 10,
-     "weeks_played": 2,
-     "week10_points": 5
-    },
-    {
-     "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
+     "season_avg": 4.5,
+     "total_points": 18,
+     "weeks_played": 4,
+     "week12_points": 6
     },
     {
      "call_sign": "TommyBoy",
-     "season_avg": 3,
-     "total_points": 6,
-     "weeks_played": 2,
-     "week10_points": 4
+     "season_avg": 3.33,
+     "total_points": 10,
+     "weeks_played": 3,
+     "week12_points": 4
+    },
+    {
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
      "call_sign": "Signed up (call sign pending)"
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Golden Lions": {
    "name": "Golden Lions",
@@ -320,617 +403,779 @@
    "players": [
     {
      "call_sign": "Jermmmm",
-     "season_avg": 4,
+     "season_avg": 4.0,
      "total_points": 4,
      "weeks_played": 1,
-     "week10_points": 4
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 1
   },
   "Guests of GH&GJ": {
    "name": "Guests of GH&GJ",
    "count": 1,
    "graded": true,
-   "season_avg": "6.50",
+   "season_avg": "5.75",
    "players": [
     {
      "call_sign": "Great Dane",
-     "season_avg": 6.5,
-     "total_points": 13,
-     "weeks_played": 2,
-     "week10_points": 6
+     "season_avg": 5.75,
+     "total_points": 23,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Guido's Cuban Mafia": {
    "name": "Guido's Cuban Mafia",
    "count": 5,
-   "graded": false,
-   "season_avg": null,
+   "graded": true,
+   "season_avg": "2.38",
    "players": [
     {
-     "call_sign": "Cuban's Doc"
+     "call_sign": "Miami Cuban",
+     "season_avg": 4.0,
+     "total_points": 4,
+     "weeks_played": 1,
+     "week12_points": null
     },
     {
-     "call_sign": "Guidos Miami Family 1"
+     "call_sign": "Cuban’s Doc",
+     "season_avg": 3.33,
+     "total_points": 10,
+     "weeks_played": 3,
+     "week12_points": null
+    },
+    {
+     "call_sign": "Guidos Miami Family 1",
+     "season_avg": 3.0,
+     "total_points": 3,
+     "weeks_played": 1,
+     "week12_points": null
+    },
+    {
+     "call_sign": "The Cuban Doc",
+     "season_avg": 1.33,
+     "total_points": 4,
+     "weeks_played": 3,
+     "week12_points": 2
     },
     {
      "call_sign": "Guidos Miami Family 2"
-    },
-    {
-     "call_sign": "Miami Cuban"
-    },
-    {
-     "call_sign": "The Cuban Doc"
     }
-   ]
+   ],
+   "season_weeks": 4
+  },
+  "GUNS UP 👆": {
+   "name": "GUNS UP 👆",
+   "count": 1,
+   "graded": true,
+   "season_avg": "2.00",
+   "players": [
+    {
+     "call_sign": "Ronsboys",
+     "season_avg": 2.0,
+     "total_points": 6,
+     "weeks_played": 3,
+     "week12_points": 2
+    }
+   ],
+   "season_weeks": 1
   },
   "Hoo Hoo Hoosiers": {
    "name": "Hoo Hoo Hoosiers",
    "count": 3,
    "graded": true,
-   "season_avg": "6.25",
+   "season_avg": "5.88",
    "players": [
     {
      "call_sign": "Coach Cig",
-     "season_avg": 7,
+     "season_avg": 7.0,
      "total_points": 7,
      "weeks_played": 1,
-     "week10_points": 7
-    },
-    {
-     "call_sign": "Herb",
-     "season_avg": 7,
-     "total_points": 7,
-     "weeks_played": 1,
-     "week10_points": null
+     "week12_points": null
     },
     {
      "call_sign": "Team Cignetti",
-     "season_avg": 5.5,
-     "total_points": 11,
-     "weeks_played": 2,
-     "week10_points": 7
+     "season_avg": 6.0,
+     "total_points": 24,
+     "weeks_played": 4,
+     "week12_points": 5
+    },
+    {
+     "call_sign": "Herb",
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": 5
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Houston Cougars": {
    "name": "Houston Cougars",
    "count": 7,
    "graded": true,
-   "season_avg": "4.00",
+   "season_avg": "4.31",
    "players": [
     {
      "call_sign": "Coog32",
-     "season_avg": 6,
+     "season_avg": 6.0,
      "total_points": 6,
      "weeks_played": 1,
-     "week10_points": 6
+     "week12_points": null
+    },
+    {
+     "call_sign": "Farmvoy",
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": 5
     },
     {
      "call_sign": "Champ",
-     "season_avg": 5,
+     "season_avg": 5.0,
      "total_points": 5,
      "weeks_played": 1,
-     "week10_points": 5
+     "week12_points": null
     },
     {
      "call_sign": "E",
-     "season_avg": 5,
-     "total_points": 5,
-     "weeks_played": 1,
-     "week10_points": 5
-    },
-    {
-     "call_sign": "Farmboy",
-     "season_avg": 5,
-     "total_points": 5,
-     "weeks_played": 1,
-     "week10_points": 5
+     "season_avg": 5.0,
+     "total_points": 15,
+     "weeks_played": 3,
+     "week12_points": 4
     },
     {
      "call_sign": "The Saturday Surgeon",
-     "season_avg": 5,
-     "total_points": 10,
-     "weeks_played": 2,
-     "week10_points": 5
-    },
-    {
-     "call_sign": "SB10",
-     "season_avg": 2,
-     "total_points": 2,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 4.75,
+     "total_points": 19,
+     "weeks_played": 4,
+     "week12_points": 7
     },
     {
      "call_sign": "Petpad",
-     "season_avg": 1,
-     "total_points": 1,
-     "weeks_played": 1,
-     "week10_points": 1
+     "season_avg": 4.0,
+     "total_points": 12,
+     "weeks_played": 3,
+     "week12_points": 6
+    },
+    {
+     "call_sign": "SB10",
+     "season_avg": 2.0,
+     "total_points": 4,
+     "weeks_played": 2,
+     "week12_points": 2
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Kleb Bearcubs": {
    "name": "Kleb Bearcubs",
    "count": 5,
    "graded": true,
-   "season_avg": "4.50",
+   "season_avg": "4.37",
    "players": [
     {
+     "call_sign": "Kiki",
+     "season_avg": 6.0,
+     "total_points": 6,
+     "weeks_played": 1,
+     "week12_points": null
+    },
+    {
      "call_sign": "putman",
-     "season_avg": 5.5,
-     "total_points": 11,
-     "weeks_played": 2,
-     "week10_points": 6
+     "season_avg": 5.0,
+     "total_points": 20,
+     "weeks_played": 4,
+     "week12_points": 5
+    },
+    {
+     "call_sign": "Local George",
+     "season_avg": 4.0,
+     "total_points": 4,
+     "weeks_played": 1,
+     "week12_points": null
+    },
+    {
+     "call_sign": "MP",
+     "season_avg": 4.0,
+     "total_points": 4,
+     "weeks_played": 1,
+     "week12_points": null
     },
     {
      "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
-    },
-    {
-     "call_sign": "Kiki"
-    },
-    {
-     "call_sign": "Local George"
-    },
-    {
-     "call_sign": "MP"
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Made in America": {
    "name": "Made in America",
-   "count": 11,
+   "count": 13,
    "graded": true,
-   "season_avg": "3.33",
+   "season_avg": "4.01",
    "players": [
     {
+     "call_sign": "Matty “The Bull” Gravano",
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": null
+    },
+    {
+     "call_sign": "DBREEZY",
+     "season_avg": 5.0,
+     "total_points": 5,
+     "weeks_played": 1,
+     "week12_points": 5
+    },
+    {
      "call_sign": "The Saturday Surgeon",
-     "season_avg": 5,
-     "total_points": 10,
+     "season_avg": 4.75,
+     "total_points": 19,
+     "weeks_played": 4,
+     "week12_points": 7
+    },
+    {
+     "call_sign": "Josh",
+     "season_avg": 4.5,
+     "total_points": 9,
      "weeks_played": 2,
-     "week10_points": 5
+     "week12_points": null
     },
     {
-     "call_sign": "Ryan",
-     "season_avg": 4,
-     "total_points": 4,
-     "weeks_played": 1,
-     "week10_points": 4
-    },
-    {
-     "call_sign": "Vince Young",
-     "season_avg": 4,
-     "total_points": 4,
-     "weeks_played": 1,
-     "week10_points": 4
-    },
-    {
-     "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
+     "call_sign": "LSU knife/gun club",
+     "season_avg": 4.5,
+     "total_points": 9,
      "weeks_played": 2,
-     "week10_points": 3
-    },
-    {
-     "call_sign": "AT",
-     "season_avg": 3,
-     "total_points": 3,
-     "weeks_played": 1,
-     "week10_points": 3
+     "week12_points": 5
     },
     {
      "call_sign": "Dr. Stag",
-     "season_avg": 3,
+     "season_avg": 4.33,
+     "total_points": 13,
+     "weeks_played": 3,
+     "week12_points": 5
+    },
+    {
+     "call_sign": "Local George",
+     "season_avg": 4.0,
+     "total_points": 4,
+     "weeks_played": 1,
+     "week12_points": null
+    },
+    {
+     "call_sign": "Ryan",
+     "season_avg": 4.0,
+     "total_points": 4,
+     "weeks_played": 1,
+     "week12_points": null
+    },
+    {
+     "call_sign": "The ZTW Show",
+     "season_avg": 3.5,
+     "total_points": 7,
+     "weeks_played": 2,
+     "week12_points": 3
+    },
+    {
+     "call_sign": "Vince Young",
+     "season_avg": 3.5,
+     "total_points": 7,
+     "weeks_played": 2,
+     "week12_points": null
+    },
+    {
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
+    },
+    {
+     "call_sign": "AT",
+     "season_avg": 3.0,
      "total_points": 3,
      "weeks_played": 1,
-     "week10_points": 3
-    },
-    {
-     "call_sign": "Josh"
-    },
-    {
-     "call_sign": "Local George"
-    },
-    {
-     "call_sign": "LSU knife/gun club"
-    },
-    {
-     "call_sign": "Matty “The Bull” Gravano"
+     "week12_points": null
     },
     {
      "call_sign": "The Cuban Doc",
-     "season_avg": 0,
-     "total_points": 0,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 1.33,
+     "total_points": 4,
+     "weeks_played": 3,
+     "week12_points": 2
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Maier Family": {
    "name": "Maier Family",
    "count": 13,
    "graded": true,
-   "season_avg": "4.20",
+   "season_avg": "4.35",
    "players": [
     {
      "call_sign": "brookie cookie",
-     "season_avg": 7,
+     "season_avg": 7.0,
      "total_points": 7,
      "weeks_played": 1,
-     "week10_points": 7
-    },
-    {
-     "call_sign": "Matty “The Bull” Gravano",
-     "season_avg": 6.5,
-     "total_points": 13,
-     "weeks_played": 2,
-     "week10_points": 8
+     "week12_points": null
     },
     {
      "call_sign": "Mitch",
-     "season_avg": 6,
+     "season_avg": 6.0,
      "total_points": 6,
      "weeks_played": 1,
-     "week10_points": 6
+     "week12_points": null
     },
     {
      "call_sign": "Mikey",
      "season_avg": 5.5,
      "total_points": 11,
      "weeks_played": 2,
-     "week10_points": 7
+     "week12_points": null
     },
     {
-     "call_sign": "CMUEL$$$",
-     "season_avg": 4.5,
-     "total_points": 9,
-     "weeks_played": 2,
-     "week10_points": 5
+     "call_sign": "cmuell",
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": null
+    },
+    {
+     "call_sign": "Matty “The Bull” Gravano",
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": null
     },
     {
      "call_sign": "Sunshine",
-     "season_avg": 4.5,
-     "total_points": 9,
-     "weeks_played": 2,
-     "week10_points": 2
-    },
-    {
-     "call_sign": "SHK",
-     "season_avg": 4,
-     "total_points": 4,
-     "weeks_played": 1,
-     "week10_points": 4
+     "season_avg": 4.75,
+     "total_points": 19,
+     "weeks_played": 4,
+     "week12_points": 5
     },
     {
      "call_sign": "The Friendly Leprechaun ☘️",
-     "season_avg": 4,
-     "total_points": 4,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 4.5,
+     "total_points": 9,
+     "weeks_played": 2,
+     "week12_points": null
     },
     {
-     "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
+     "call_sign": "Dr. Stag",
+     "season_avg": 4.33,
+     "total_points": 13,
+     "weeks_played": 3,
+     "week12_points": 5
     },
     {
      "call_sign": "BMG",
-     "season_avg": 3,
-     "total_points": 3,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 4.0,
+     "total_points": 8,
+     "weeks_played": 2,
+     "week12_points": null
     },
     {
-     "call_sign": "Dr. Stag",
-     "season_avg": 3,
-     "total_points": 3,
-     "weeks_played": 1,
-     "week10_points": 3
+     "call_sign": "Petpad",
+     "season_avg": 4.0,
+     "total_points": 12,
+     "weeks_played": 3,
+     "week12_points": 6
+    },
+    {
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
      "call_sign": "Guidos Miami Family 1",
-     "season_avg": 3,
+     "season_avg": 3.0,
      "total_points": 3,
      "weeks_played": 1,
-     "week10_points": 3
+     "week12_points": null
     },
     {
-     "call_sign": "Petpad",
-     "season_avg": 1,
-     "total_points": 1,
-     "weeks_played": 1,
-     "week10_points": 1
+     "call_sign": "SHK",
+     "season_avg": 3.0,
+     "total_points": 6,
+     "weeks_played": 2,
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Maier's Random Friends": {
    "name": "Maier's Random Friends",
-   "count": 24,
+   "count": 25,
    "graded": true,
-   "season_avg": "4.16",
+   "season_avg": "4.29",
    "players": [
     {
      "call_sign": "Epic Picks",
-     "season_avg": 7,
-     "total_points": 7,
-     "weeks_played": 1,
-     "week10_points": 7
-    },
-    {
-     "call_sign": "Dirty Joe",
-     "season_avg": 6,
-     "total_points": 6,
-     "weeks_played": 1,
-     "week10_points": 6
+     "season_avg": 6.0,
+     "total_points": 18,
+     "weeks_played": 3,
+     "week12_points": 5
     },
     {
      "call_sign": "Ladderman",
-     "season_avg": 6,
+     "season_avg": 6.0,
      "total_points": 6,
      "weeks_played": 1,
-     "week10_points": 6
+     "week12_points": null
     },
     {
      "call_sign": "Pepe",
-     "season_avg": 6,
+     "season_avg": 6.0,
      "total_points": 6,
      "weeks_played": 1,
-     "week10_points": 6
+     "week12_points": null
     },
     {
-     "call_sign": "Big Dawg Sanford",
-     "season_avg": 5,
-     "total_points": 5,
-     "weeks_played": 1,
-     "week10_points": 5
+     "call_sign": "cmuell",
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": null
     },
     {
      "call_sign": "BigKoop",
-     "season_avg": 5,
+     "season_avg": 5.0,
      "total_points": 5,
      "weeks_played": 1,
-     "week10_points": 5
+     "week12_points": null
     },
     {
-     "call_sign": "CDog",
-     "season_avg": 5,
+     "call_sign": "DBREEZY",
+     "season_avg": 5.0,
      "total_points": 5,
      "weeks_played": 1,
-     "week10_points": 5
+     "week12_points": 5
     },
     {
      "call_sign": "Mojo",
-     "season_avg": 5,
+     "season_avg": 5.0,
      "total_points": 5,
      "weeks_played": 1,
-     "week10_points": null
+     "week12_points": null
     },
     {
      "call_sign": "Nuclear Appelbomb",
-     "season_avg": 5,
+     "season_avg": 5.0,
      "total_points": 5,
      "weeks_played": 1,
-     "week10_points": null
-    },
-    {
-     "call_sign": "Turkey",
-     "season_avg": 5,
-     "total_points": 10,
-     "weeks_played": 2,
-     "week10_points": 5
-    },
-    {
-     "call_sign": "CMUEL$$$",
-     "season_avg": 4.5,
-     "total_points": 9,
-     "weeks_played": 2,
-     "week10_points": 5
+     "week12_points": null
     },
     {
      "call_sign": "Sunshine",
+     "season_avg": 4.75,
+     "total_points": 19,
+     "weeks_played": 4,
+     "week12_points": 5
+    },
+    {
+     "call_sign": "Big Dawg Sanford",
+     "season_avg": 4.67,
+     "total_points": 14,
+     "weeks_played": 3,
+     "week12_points": 6
+    },
+    {
+     "call_sign": "LSU knife/gun club",
      "season_avg": 4.5,
      "total_points": 9,
      "weeks_played": 2,
-     "week10_points": 2
-    },
-    {
-     "call_sign": "Cuban's Doc",
-     "season_avg": 4,
-     "total_points": 8,
-     "weeks_played": 2,
-     "week10_points": 4
+     "week12_points": 5
     },
     {
      "call_sign": "The Friendly Leprechaun ☘️",
-     "season_avg": 4,
-     "total_points": 4,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 4.5,
+     "total_points": 9,
+     "weeks_played": 2,
+     "week12_points": null
+    },
+    {
+     "call_sign": "Turkey",
+     "season_avg": 4.5,
+     "total_points": 18,
+     "weeks_played": 4,
+     "week12_points": 6
     },
     {
      "call_sign": "Dr. Stag",
-     "season_avg": 3,
-     "total_points": 3,
-     "weeks_played": 1,
-     "week10_points": 3
+     "season_avg": 4.33,
+     "total_points": 13,
+     "weeks_played": 3,
+     "week12_points": 5
     },
     {
-     "call_sign": "Ry Con",
-     "season_avg": 3,
-     "total_points": 3,
+     "call_sign": "CDog",
+     "season_avg": 4.0,
+     "total_points": 12,
+     "weeks_played": 3,
+     "week12_points": 3
+    },
+    {
+     "call_sign": "Dirty Joe",
+     "season_avg": 4.0,
+     "total_points": 12,
+     "weeks_played": 3,
+     "week12_points": 4
+    },
+    {
+     "call_sign": "Local George",
+     "season_avg": 4.0,
+     "total_points": 4,
      "weeks_played": 1,
-     "week10_points": null
+     "week12_points": null
+    },
+    {
+     "call_sign": "MP",
+     "season_avg": 4.0,
+     "total_points": 4,
+     "weeks_played": 1,
+     "week12_points": null
     },
     {
      "call_sign": "Petpad",
-     "season_avg": 1,
-     "total_points": 1,
+     "season_avg": 4.0,
+     "total_points": 12,
+     "weeks_played": 3,
+     "week12_points": 6
+    },
+    {
+     "call_sign": "Cuban’s Doc",
+     "season_avg": 3.33,
+     "total_points": 10,
+     "weeks_played": 3,
+     "week12_points": null
+    },
+    {
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
+    },
+    {
+     "call_sign": "Ry Con",
+     "season_avg": 3.0,
+     "total_points": 3,
      "weeks_played": 1,
-     "week10_points": 1
+     "week12_points": null
     },
     {
      "call_sign": "Ronsboys",
-     "season_avg": 1,
-     "total_points": 1,
-     "weeks_played": 1,
-     "week10_points": null
-    },
-    {
-     "call_sign": "The U",
-     "season_avg": 1,
-     "total_points": 1,
-     "weeks_played": 1,
-     "week10_points": 1
-    },
-    {
-     "call_sign": "GOLFDOC"
-    },
-    {
-     "call_sign": "Local George"
-    },
-    {
-     "call_sign": "LSU knife/gun club"
-    },
-    {
-     "call_sign": "MP"
+     "season_avg": 2.0,
+     "total_points": 6,
+     "weeks_played": 3,
+     "week12_points": 2
     },
     {
      "call_sign": "The Cuban Doc",
-     "season_avg": 0,
-     "total_points": 0,
+     "season_avg": 1.33,
+     "total_points": 4,
+     "weeks_played": 3,
+     "week12_points": 2
+    },
+    {
+     "call_sign": "The U",
+     "season_avg": 1.0,
+     "total_points": 1,
      "weeks_played": 1,
-     "week10_points": null
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Mean Green": {
    "name": "Mean Green",
-   "count": 4,
+   "count": 5,
    "graded": true,
-   "season_avg": "3.75",
+   "season_avg": "4.13",
    "players": [
     {
+     "call_sign": "kdawg",
+     "season_avg": 6.0,
+     "total_points": 12,
+     "weeks_played": 2,
+     "week12_points": 4
+    },
+    {
      "call_sign": "Mitch",
-     "season_avg": 6,
+     "season_avg": 6.0,
      "total_points": 6,
      "weeks_played": 1,
-     "week10_points": 6
+     "week12_points": null
     },
     {
      "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
      "call_sign": "Rafa",
-     "season_avg": 3,
+     "season_avg": 3.0,
      "total_points": 3,
      "weeks_played": 1,
-     "week10_points": 3
+     "week12_points": null
     },
     {
      "call_sign": "BK",
-     "season_avg": 2,
+     "season_avg": 2.0,
      "total_points": 2,
      "weeks_played": 1,
-     "week10_points": 2
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "ND Ortho Society": {
    "name": "ND Ortho Society",
-   "count": 4,
+   "count": 6,
    "graded": true,
-   "season_avg": "4.25",
+   "season_avg": "3.94",
    "players": [
     {
-     "call_sign": "The Saturday Surgeon",
-     "season_avg": 5,
+     "call_sign": "SUPERDAVE",
+     "season_avg": 5.0,
      "total_points": 10,
      "weeks_played": 2,
-     "week10_points": 5
+     "week12_points": 6
+    },
+    {
+     "call_sign": "The Saturday Surgeon",
+     "season_avg": 4.75,
+     "total_points": 19,
+     "weeks_played": 4,
+     "week12_points": 7
+    },
+    {
+     "call_sign": "LSU knife/gun club",
+     "season_avg": 4.5,
+     "total_points": 9,
+     "weeks_played": 2,
+     "week12_points": 5
     },
     {
      "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
-     "call_sign": "LSU knife/gun club"
+     "call_sign": "B Hardy",
+     "season_avg": 3.0,
+     "total_points": 3,
+     "weeks_played": 1,
+     "week12_points": null
     },
     {
-     "call_sign": "The Cuban Doc"
+     "call_sign": "The Cuban Doc",
+     "season_avg": 1.33,
+     "total_points": 4,
+     "weeks_played": 3,
+     "week12_points": 2
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Notre Dame Alumni": {
    "name": "Notre Dame Alumni",
-   "count": 3,
+   "count": 4,
    "graded": true,
-   "season_avg": "4.00",
+   "season_avg": "4.46",
    "players": [
     {
      "call_sign": "Haak Attack",
-     "season_avg": 5,
-     "total_points": 5,
+     "season_avg": 6.0,
+     "total_points": 18,
+     "weeks_played": 3,
+     "week12_points": 6
+    },
+    {
+     "call_sign": "Kiki",
+     "season_avg": 6.0,
+     "total_points": 6,
      "weeks_played": 1,
-     "week10_points": 5
+     "week12_points": null
+    },
+    {
+     "call_sign": "GOIRISH",
+     "season_avg": 4.0,
+     "total_points": 4,
+     "weeks_played": 1,
+     "week12_points": 4
     },
     {
      "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
-    },
-    {
-     "call_sign": "Kiki"
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Pig Sheet": {
    "name": "Pig Sheet",
-   "count": 1,
+   "count": 2,
    "graded": true,
-   "season_avg": "3.50",
+   "season_avg": "3.12",
    "players": [
     {
-     "call_sign": "GOLFDOC",
+     "call_sign": "The ZTW Show",
      "season_avg": 3.5,
      "total_points": 7,
      "weeks_played": 2,
-     "week10_points": 3
+     "week12_points": 3
+    },
+    {
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Platte River Rumble": {
    "name": "Platte River Rumble",
    "count": 2,
    "graded": true,
-   "season_avg": "3.00",
+   "season_avg": "3.17",
    "players": [
     {
      "call_sign": "Righteous Anatomicity",
-     "season_avg": 3,
-     "total_points": 3,
-     "weeks_played": 1,
-     "week10_points": 3
+     "season_avg": 3.33,
+     "total_points": 10,
+     "weeks_played": 3,
+     "week12_points": 4
     },
     {
-     "call_sign": "GOLFDOC"
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 3
   },
   "r3d": {
    "name": "r3d",
@@ -940,138 +1185,185 @@
    "players": [
     {
      "call_sign": "Beezy",
-     "season_avg": 5,
+     "season_avg": 5.0,
      "total_points": 5,
      "weeks_played": 1,
-     "week10_points": 5
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 1
   },
   "River Pointe Bandits": {
    "name": "River Pointe Bandits",
    "count": 0,
    "graded": false,
    "season_avg": null,
-   "players": []
+   "players": [],
+   "season_weeks": null
   },
   "S&N": {
    "name": "S&N",
-   "count": 1,
+   "count": 4,
    "graded": true,
-   "season_avg": "4.00",
+   "season_avg": "4.28",
    "players": [
     {
+     "call_sign": "Weldo",
+     "season_avg": 6.0,
+     "total_points": 12,
+     "weeks_played": 2,
+     "week12_points": 5
+    },
+    {
      "call_sign": "Josh",
-     "season_avg": 4,
-     "total_points": 4,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 4.5,
+     "total_points": 9,
+     "weeks_played": 2,
+     "week12_points": null
+    },
+    {
+     "call_sign": "CMoore",
+     "season_avg": 4.0,
+     "total_points": 8,
+     "weeks_played": 2,
+     "week12_points": 4
+    },
+    {
+     "call_sign": "Hurbie",
+     "season_avg": 3.0,
+     "total_points": 6,
+     "weeks_played": 2,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 3
   },
   "Sacred Heart": {
    "name": "Sacred Heart",
-   "count": 2,
+   "count": 3,
    "graded": true,
-   "season_avg": "5.00",
+   "season_avg": "3.17",
    "players": [
     {
-     "call_sign": "Hollywood",
-     "season_avg": 5,
+     "call_sign": "River Rat",
+     "season_avg": 5.0,
      "total_points": 5,
      "weeks_played": 1,
-     "week10_points": 5
+     "week12_points": 5
     },
     {
-     "call_sign": "GOLFDOC"
+     "call_sign": "Hollywood",
+     "season_avg": 4.5,
+     "total_points": 9,
+     "weeks_played": 2,
+     "week12_points": 4
+    },
+    {
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 2
   },
   "Saint Mary's Golf": {
    "name": "Saint Mary's Golf",
    "count": 5,
    "graded": true,
-   "season_avg": "4.50",
+   "season_avg": "3.98",
    "players": [
     {
      "call_sign": "Rcckumsockum",
-     "season_avg": 6,
+     "season_avg": 6.0,
      "total_points": 6,
      "weeks_played": 1,
-     "week10_points": 6
+     "week12_points": null
     },
     {
      "call_sign": "Uncle Buck",
-     "season_avg": 6,
-     "total_points": 12,
-     "weeks_played": 2,
-     "week10_points": 6
+     "season_avg": 5.0,
+     "total_points": 20,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
      "call_sign": "The Only Colors",
-     "season_avg": 5,
-     "total_points": 10,
-     "weeks_played": 2,
-     "week10_points": 6
-    },
-    {
-     "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
+     "season_avg": 4.25,
+     "total_points": 17,
+     "weeks_played": 4,
+     "week12_points": 5
     },
     {
      "call_sign": "TommyBoy",
-     "season_avg": 3,
-     "total_points": 6,
-     "weeks_played": 2,
-     "week10_points": 4
+     "season_avg": 3.33,
+     "total_points": 10,
+     "weeks_played": 3,
+     "week12_points": 4
+    },
+    {
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Shadow Hawk": {
    "name": "Shadow Hawk",
    "count": 4,
    "graded": true,
-   "season_avg": "3.50",
+   "season_avg": "3.79",
    "players": [
     {
-     "call_sign": "The ZTW Show",
-     "season_avg": 4,
-     "total_points": 4,
+     "call_sign": "Mitch",
+     "season_avg": 6.0,
+     "total_points": 6,
      "weeks_played": 1,
-     "week10_points": null
+     "week12_points": null
     },
     {
-     "call_sign": "GOLFDOC",
+     "call_sign": "BMG",
+     "season_avg": 4.0,
+     "total_points": 8,
+     "weeks_played": 2,
+     "week12_points": null
+    },
+    {
+     "call_sign": "The ZTW Show",
      "season_avg": 3.5,
      "total_points": 7,
      "weeks_played": 2,
-     "week10_points": 3
+     "week12_points": 3
     },
     {
-     "call_sign": "BMG"
-    },
-    {
-     "call_sign": "Mitch"
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "SJR": {
    "name": "SJR",
    "count": 1,
    "graded": true,
-   "season_avg": "2.00",
+   "season_avg": "3.33",
    "players": [
     {
      "call_sign": "SJR",
-     "season_avg": 2,
-     "total_points": 2,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 3.33,
+     "total_points": 10,
+     "weeks_played": 3,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 3
   },
   "Special Ops": {
    "name": "Special Ops",
@@ -1081,55 +1373,67 @@
    "players": [
     {
      "call_sign": "Operator 1",
-     "season_avg": 3,
-     "total_points": 3,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 3.67,
+     "total_points": 11,
+     "weeks_played": 3,
+     "week12_points": 5
     }
-   ]
+   ],
+   "season_weeks": 2
   },
   "St Luke's Staff": {
    "name": "St Luke's Staff",
-   "count": 5,
+   "count": 7,
    "graded": true,
-   "season_avg": "3.08",
+   "season_avg": "3.19",
    "players": [
     {
-     "call_sign": "Cuban's Doc",
-     "season_avg": 4,
-     "total_points": 8,
-     "weeks_played": 2,
-     "week10_points": 4
-    },
-    {
      "call_sign": "Miami Cuban",
-     "season_avg": 4,
+     "season_avg": 4.0,
      "total_points": 4,
      "weeks_played": 1,
-     "week10_points": 4
+     "week12_points": null
+    },
+    {
+     "call_sign": "Saint/Tiger",
+     "season_avg": 4.0,
+     "total_points": 4,
+     "weeks_played": 1,
+     "week12_points": null
+    },
+    {
+     "call_sign": "Cuban’s Doc",
+     "season_avg": 3.33,
+     "total_points": 10,
+     "weeks_played": 3,
+     "week12_points": null
     },
     {
      "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 3
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
-     "call_sign": "Guidos Miami Family 2",
-     "season_avg": 3,
+     "call_sign": "MonkeyD_Luffy3",
+     "season_avg": 3.0,
      "total_points": 3,
      "weeks_played": 1,
-     "week10_points": 3
+     "week12_points": null
     },
     {
      "call_sign": "The Cuban Doc",
-     "season_avg": 0,
-     "total_points": 0,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 1.33,
+     "total_points": 4,
+     "weeks_played": 3,
+     "week12_points": 2
+    },
+    {
+     "call_sign": "Guidos Miami Family 2"
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "SUPERDAVE": {
    "name": "SUPERDAVE",
@@ -1139,12 +1443,13 @@
    "players": [
     {
      "call_sign": "SUPERDAVE",
-     "season_avg": 4,
-     "total_points": 4,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 5.0,
+     "total_points": 10,
+     "weeks_played": 2,
+     "week12_points": 6
     }
-   ]
+   ],
+   "season_weeks": 1
   },
   "T3": {
    "name": "T3",
@@ -1153,303 +1458,418 @@
    "season_avg": "3.00",
    "players": [
     {
-     "call_sign": "T3",
-     "season_avg": 3,
-     "total_points": 3,
-     "weeks_played": 1,
-     "week10_points": 3
+     "call_sign": "TBO",
+     "season_avg": 3.33,
+     "total_points": 10,
+     "weeks_played": 3,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 1
   },
   "Team Enovis/Skeletal Dynamics": {
    "name": "Team Enovis/Skeletal Dynamics",
    "count": 3,
    "graded": true,
-   "season_avg": "5.67",
+   "season_avg": "5.17",
    "players": [
     {
      "call_sign": "GOOSE",
-     "season_avg": 6.5,
-     "total_points": 13,
-     "weeks_played": 2,
-     "week10_points": 7
+     "season_avg": 5.5,
+     "total_points": 22,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
      "call_sign": "King Of The Castle",
-     "season_avg": 6,
-     "total_points": 12,
-     "weeks_played": 2,
-     "week10_points": 6
+     "season_avg": 5.25,
+     "total_points": 21,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
-     "call_sign": "Chilly's Prize Pix",
-     "season_avg": 4.5,
-     "total_points": 9,
-     "weeks_played": 2,
-     "week10_points": 5
+     "call_sign": "Chilly’s Prize Pix",
+     "season_avg": 4.75,
+     "total_points": 19,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Team Skylark": {
    "name": "Team Skylark",
    "count": 3,
    "graded": true,
-   "season_avg": "4.50",
+   "season_avg": "3.50",
    "players": [
     {
-     "call_sign": "Lizzie J",
-     "season_avg": 5,
-     "total_points": 5,
-     "weeks_played": 1,
-     "week10_points": null
-    },
-    {
      "call_sign": "Iceman",
-     "season_avg": 4,
+     "season_avg": 4.0,
      "total_points": 4,
      "weeks_played": 1,
-     "week10_points": null
+     "week12_points": null
     },
     {
-     "call_sign": "The Cuban Doc"
+     "call_sign": "Lizzie J",
+     "season_avg": 4.0,
+     "total_points": 8,
+     "weeks_played": 2,
+     "week12_points": null
+    },
+    {
+     "call_sign": "The Cuban Doc",
+     "season_avg": 1.33,
+     "total_points": 4,
+     "weeks_played": 3,
+     "week12_points": 2
     }
-   ]
+   ],
+   "season_weeks": 2
+  },
+  "TEAM TBO": {
+   "name": "TEAM TBO",
+   "count": 1,
+   "graded": true,
+   "season_avg": "4.00",
+   "players": [
+    {
+     "call_sign": "TBO",
+     "season_avg": 3.33,
+     "total_points": 10,
+     "weeks_played": 3,
+     "week12_points": 4
+    }
+   ],
+   "season_weeks": 1
   },
   "Team Turkey": {
    "name": "Team Turkey",
    "count": 3,
    "graded": true,
-   "season_avg": "5.25",
+   "season_avg": "4.63",
    "players": [
     {
      "call_sign": "Kaki",
-     "season_avg": 6,
+     "season_avg": 6.0,
      "total_points": 6,
      "weeks_played": 1,
-     "week10_points": null
+     "week12_points": null
     },
     {
      "call_sign": "Boomer",
-     "season_avg": 5,
-     "total_points": 5,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 5.5,
+     "total_points": 11,
+     "weeks_played": 2,
+     "week12_points": 6
     },
     {
      "call_sign": "Turkey",
-     "season_avg": 5,
-     "total_points": 10,
-     "weeks_played": 2,
-     "week10_points": 5
+     "season_avg": 4.5,
+     "total_points": 18,
+     "weeks_played": 4,
+     "week12_points": 6
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "Tevon's South Florida Crew": {
    "name": "Tevon's South Florida Crew",
    "count": 0,
    "graded": false,
    "season_avg": null,
-   "players": []
+   "players": [],
+   "season_weeks": null
   },
   "Texas OrthoSolutions": {
    "name": "Texas OrthoSolutions",
-   "count": 2,
+   "count": 3,
    "graded": true,
-   "season_avg": "6.00",
+   "season_avg": "4.89",
    "players": [
     {
-     "call_sign": "Honey Badger",
-     "season_avg": 6,
-     "total_points": 6,
-     "weeks_played": 1,
-     "week10_points": null
+     "call_sign": "King Of The Castle",
+     "season_avg": 5.25,
+     "total_points": 21,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
-     "call_sign": "King Of The Castle"
+     "call_sign": "Honey Badger",
+     "season_avg": 4.67,
+     "total_points": 14,
+     "weeks_played": 3,
+     "week12_points": 5
+    },
+    {
+     "call_sign": "Operator 1",
+     "season_avg": 3.67,
+     "total_points": 11,
+     "weeks_played": 3,
+     "week12_points": 5
     }
-   ]
+   ],
+   "season_weeks": 3
+  },
+  "Texas Tech Med School": {
+   "name": "Texas Tech Med School",
+   "count": 1,
+   "graded": true,
+   "season_avg": "4.00",
+   "players": [
+    {
+     "call_sign": "kdawg",
+     "season_avg": 6.0,
+     "total_points": 12,
+     "weeks_played": 2,
+     "week12_points": 4
+    }
+   ],
+   "season_weeks": 1
   },
   "The Four Horseman": {
    "name": "The Four Horseman",
-   "count": 4,
+   "count": 5,
    "graded": true,
-   "season_avg": "3.83",
+   "season_avg": "3.75",
    "players": [
     {
-     "call_sign": "CMUEL$$$",
+     "call_sign": "cmuell",
+     "season_avg": 5.33,
+     "total_points": 16,
+     "weeks_played": 3,
+     "week12_points": null
+    },
+    {
+     "call_sign": "LSU knife/gun club",
      "season_avg": 4.5,
      "total_points": 9,
      "weeks_played": 2,
-     "week10_points": 5
+     "week12_points": 5
     },
     {
-     "call_sign": "GOLFDOC",
-     "season_avg": 3.5,
-     "total_points": 7,
+     "call_sign": "The Friendly Leprechaun ☘️",
+     "season_avg": 4.5,
+     "total_points": 9,
      "weeks_played": 2,
-     "week10_points": 3
+     "week12_points": null
     },
     {
      "call_sign": "Tennis wizard",
      "season_avg": 3.5,
-     "total_points": 7,
-     "weeks_played": 2,
-     "week10_points": 2
+     "total_points": 14,
+     "weeks_played": 4,
+     "week12_points": 4
     },
     {
-     "call_sign": "LSU knife/gun club"
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "The Habibi Committee": {
    "name": "The Habibi Committee",
    "count": 5,
-   "graded": false,
-   "season_avg": null,
+   "graded": true,
+   "season_avg": "3.23",
    "players": [
     {
-     "call_sign": "Rosa"
+     "call_sign": "The Goat 🐐",
+     "season_avg": 4.67,
+     "total_points": 14,
+     "weeks_played": 3,
+     "week12_points": 4
     },
     {
-     "call_sign": "SBM"
+     "call_sign": "Sruthi",
+     "season_avg": 3.5,
+     "total_points": 7,
+     "weeks_played": 2,
+     "week12_points": 4
     },
     {
-     "call_sign": "Sruthi"
+     "call_sign": "SBM",
+     "season_avg": 3.0,
+     "total_points": 6,
+     "weeks_played": 2,
+     "week12_points": 3
     },
     {
-     "call_sign": "The Goat 🐐"
+     "call_sign": "Tito",
+     "season_avg": 3.0,
+     "total_points": 3,
+     "weeks_played": 1,
+     "week12_points": null
     },
     {
-     "call_sign": "Tito"
+     "call_sign": "Rosa",
+     "season_avg": 1.0,
+     "total_points": 1,
+     "weeks_played": 1,
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 2
   },
   "UTSW Medical School": {
    "name": "UTSW Medical School",
    "count": 4,
    "graded": true,
-   "season_avg": "4.58",
+   "season_avg": "4.42",
    "players": [
     {
      "call_sign": "El Presidente",
-     "season_avg": 6,
-     "total_points": 12,
+     "season_avg": 5.75,
+     "total_points": 23,
+     "weeks_played": 4,
+     "week12_points": 6
+    },
+    {
+     "call_sign": "LSU knife/gun club",
+     "season_avg": 4.5,
+     "total_points": 9,
      "weeks_played": 2,
-     "week10_points": 7
+     "week12_points": 5
     },
     {
      "call_sign": "Vince Young",
-     "season_avg": 4,
-     "total_points": 4,
-     "weeks_played": 1,
-     "week10_points": 4
-    },
-    {
-     "call_sign": "GOLFDOC",
      "season_avg": 3.5,
      "total_points": 7,
      "weeks_played": 2,
-     "week10_points": 3
+     "week12_points": null
     },
     {
-     "call_sign": "LSU knife/gun club"
+     "call_sign": "GOLFDOC",
+     "season_avg": 3.25,
+     "total_points": 13,
+     "weeks_played": 4,
+     "week12_points": 4
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "WH Podiatry Residency": {
    "name": "WH Podiatry Residency",
    "count": 9,
    "graded": true,
-   "season_avg": "4.25",
+   "season_avg": "3.79",
    "players": [
     {
-     "call_sign": "The Goat 🐐",
-     "season_avg": 6,
-     "total_points": 6,
-     "weeks_played": 1,
-     "week10_points": 6
-    },
-    {
      "call_sign": "Marve",
-     "season_avg": 5,
+     "season_avg": 5.0,
      "total_points": 5,
      "weeks_played": 1,
-     "week10_points": null
+     "week12_points": null
+    },
+    {
+     "call_sign": "The Goat 🐐",
+     "season_avg": 4.67,
+     "total_points": 14,
+     "weeks_played": 3,
+     "week12_points": 4
     },
     {
      "call_sign": "Megatron",
-     "season_avg": 5,
-     "total_points": 5,
-     "weeks_played": 1,
-     "week10_points": null
+     "season_avg": 4.5,
+     "total_points": 9,
+     "weeks_played": 2,
+     "week12_points": 4
     },
     {
-     "call_sign": "Apple",
-     "season_avg": 3,
-     "total_points": 3,
-     "weeks_played": 1,
-     "week10_points": null
+     "call_sign": "Tosin",
+     "season_avg": 4.0,
+     "total_points": 8,
+     "weeks_played": 2,
+     "week12_points": 7
     },
     {
-     "call_sign": "Trauma Queen 💁🏻‍♀️",
-     "season_avg": 3,
-     "total_points": 3,
-     "weeks_played": 1,
-     "week10_points": null
+     "call_sign": "Sruthi",
+     "season_avg": 3.5,
+     "total_points": 7,
+     "weeks_played": 2,
+     "week12_points": 4
     },
     {
      "call_sign": "Viewshk",
-     "season_avg": 3,
+     "season_avg": 3.5,
+     "total_points": 7,
+     "weeks_played": 2,
+     "week12_points": 4
+    },
+    {
+     "call_sign": "Dr AK21",
+     "season_avg": 3.0,
+     "total_points": 6,
+     "weeks_played": 2,
+     "week12_points": 3
+    },
+    {
+     "call_sign": "Trauma Queen 💁🏻‍♀️",
+     "season_avg": 3.0,
      "total_points": 3,
      "weeks_played": 1,
-     "week10_points": 3
+     "week12_points": null
     },
     {
-     "call_sign": "Dr AK21"
-    },
-    {
-     "call_sign": "Sruthi"
-    },
-    {
-     "call_sign": "Tosin"
+     "call_sign": "Apple",
+     "season_avg": 2.5,
+     "total_points": 5,
+     "weeks_played": 2,
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 4
   },
   "William's": {
    "name": "William's",
    "count": 2,
-   "graded": false,
-   "season_avg": null,
+   "graded": true,
+   "season_avg": "5.67",
    "players": [
     {
-     "call_sign": "Luke"
+     "call_sign": "Team Cignetti",
+     "season_avg": 6.0,
+     "total_points": 24,
+     "weeks_played": 4,
+     "week12_points": 5
     },
     {
-     "call_sign": "Team Cignetti"
+     "call_sign": "Luke",
+     "season_avg": 3.0,
+     "total_points": 3,
+     "weeks_played": 1,
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 3
   },
   "Williams Family": {
    "name": "Williams Family",
    "count": 2,
    "graded": true,
-   "season_avg": "4.50",
+   "season_avg": "6.00",
    "players": [
     {
      "call_sign": "Team Cignetti",
-     "season_avg": 5.5,
-     "total_points": 11,
-     "weeks_played": 2,
-     "week10_points": 7
+     "season_avg": 6.0,
+     "total_points": 24,
+     "weeks_played": 4,
+     "week12_points": 5
     },
     {
      "call_sign": "Luke",
-     "season_avg": 3,
+     "season_avg": 3.0,
      "total_points": 3,
      "weeks_played": 1,
-     "week10_points": 3
+     "week12_points": null
     }
-   ]
+   ],
+   "season_weeks": 3
   }
- }
+ },
+ "through_week": 12
 }
