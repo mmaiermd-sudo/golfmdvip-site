@@ -307,3 +307,65 @@ espnCheck().then(function () {
   console.error(err);
   process.exit(1);
 });
+
+/* Week 13: 10 ATS picks + weighted parlays (6 / 11 / 23), max 50. */
+var week13 = JSON.parse(fs.readFileSync(path.join(root, 'data/btg-week13-picks.json'), 'utf8'));
+assert.strictEqual(week13.week, 13);
+assert.strictEqual(week13.entries.length, 63);
+assert.strictEqual(week13.games.length, 10);
+assert.strictEqual(week13.parlays[0].points, 6);
+assert.strictEqual(week13.parlays[1].points, 11);
+assert.strictEqual(week13.parlays[2].points, 23);
+assert.strictEqual(week13.scoring.max_points, 50);
+assert.strictEqual(JSON.stringify(week13).indexOf('@'), -1);
+assert.ok(week13.entries.some(function (entry) { return entry.call_sign === 'GOLFDOC'; }));
+assert.ok(week13.entries.some(function (entry) { return entry.call_sign === 'Tennis wizard'; }));
+assert.ok(week13.entries.every(function (entry) { return entry.call_sign.toLowerCase() !== 'the only colors'; }));
+assert.ok(JSON.stringify(week13).toLowerCase().indexOf('matthew maier') === -1);
+
+assert.strictEqual(live.callKind('Agree – it hits'), 'agree');
+assert.strictEqual(live.callKind('Disagree – it misses'), 'disagree');
+assert.strictEqual(live.callKind('disagree'), 'disagree');
+assert.strictEqual(live.parlayPointValue({ points: 23 }), 23);
+assert.strictEqual(live.parlayPointValue({}), 1);
+assert.deepStrictEqual(live.feedUrls(week13).length, 2);
+
+var pre13 = live.grade(week13, live.scheduledBoard(week13));
+assert.strictEqual(pre13.total, 63);
+assert.strictEqual(pre13.maxPoints, 50);
+assert.strictEqual(pre13.golfdocPoints, 0);
+assert.ok(pre13.rows.every(function (row) { return row.points === 0 && row.live === 0 && row.max === 50; }));
+
+var liveEgg = live.scheduledBoard(week13);
+liveEgg.g1 = { phase: 'live', missing: false, statusName: 'STATUS_IN_PROGRESS', detail: '12:40 - 2nd', awayScore: 0, homeScore: 3 };
+var boardEgg = live.grade(week13, liveEgg);
+assert.strictEqual(boardEgg.gamesStarted, 1);
+assert.strictEqual(boardEgg.gamesFinal, 0);
+assert.strictEqual(boardEgg.golfdocPoints, 0);
+assert.strictEqual(boardEgg.golfdocLive, 1);
+assert.strictEqual(rowBy(boardEgg, 'GOLFDOC').live, 1);
+assert.strictEqual(rowBy(boardEgg, 'GOLFDOC').points, 0);
+assert.strictEqual(rowBy(boardEgg, "Cuban’s Doc").live, 0);
+
+var allCover = {};
+week13.games.forEach(function (game) {
+  var gdAway = game.golfdoc_side.team === game.away;
+  allCover[game.id] = {
+    phase: 'final',
+    missing: false,
+    statusName: 'STATUS_FINAL',
+    detail: 'Final',
+    awayScore: gdAway ? 40 : 0,
+    homeScore: gdAway ? 0 : 40
+  };
+});
+var sweep = live.grade(week13, allCover);
+assert.strictEqual(sweep.gamesFinal, 10);
+assert.strictEqual(sweep.golfdocPoints, 50);
+assert.strictEqual(rowBy(sweep, 'GOLFDOC').points, 50);
+assert.ok(sweep.parlays.every(function (parlay) { return parlay.status === 'hit'; }));
+
+var snap13 = JSON.parse(fs.readFileSync(path.join(root, 'data/btg-live-week13.json'), 'utf8'));
+assert.strictEqual(snap13.week, 13);
+assert.strictEqual(snap13.entries, 63);
+assert.strictEqual(JSON.stringify(snap13).indexOf('@'), -1);

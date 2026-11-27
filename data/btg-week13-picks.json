@@ -1,0 +1,1517 @@
+{
+ "schema": "btg-picks/1",
+ "week": 13,
+ "label": "Week 13",
+ "date": "20261127",
+ "lock_ct": "2026-11-27 11:00:00",
+ "scoring": {
+  "rule": "1 point per correct ATS pick (10 games; Game 10 is the Bonus Game) + parlay calls at 6 / 11 / 23 points (Agree scores if it hits, Disagree scores if it misses). Max 50. Push = 0.",
+  "points_per_correct_ats": 1,
+  "max_points": 50,
+  "push_points": 0,
+  "game": "A pick scores if that side covers: (pick team score - opponent score + spread) > 0; = 0 is a push.",
+  "parlay": "A parlay HITS only if every leg (GolfDoc's side) covers; it MISSES once any leg fails. 'agree' scores on HIT, 'disagree' scores on MISS. Fairway Finder = 6, GolfDoc Special = 11, Golden Domer = 23.",
+  "rank": "Standard competition ranking by official points (ties share a rank, shown as T#). LIVE* is unofficial and ranks after official points."
+ },
+ "scores_feed": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261127&groups=80&limit=400",
+ "scores_feeds": [
+  "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261127&groups=80&limit=400",
+  "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261128&groups=80&limit=400"
+ ],
+ "games": [
+  {
+   "id": "g1",
+   "game": "Mississippi State at Ole Miss",
+   "short": "MSST at MISS",
+   "away": "Mississippi State",
+   "home": "Ole Miss",
+   "kickoff_utc": "2026-11-27T17:00Z",
+   "kickoff_ct": "Fri 11:00 AM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Mississippi State",
+    "spread": 19.5,
+    "text": "Mississippi State +19.5"
+   },
+   "other_side": {
+    "team": "Ole Miss",
+    "spread": -19.5,
+    "text": "Ole Miss -19.5"
+   }
+  },
+  {
+   "id": "g2",
+   "game": "Florida at Florida State",
+   "short": "FLA at FSU",
+   "away": "Florida",
+   "home": "Florida State",
+   "kickoff_utc": "2026-11-27T20:30Z",
+   "kickoff_ct": "Fri 2:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Florida",
+    "spread": -6.5,
+    "text": "Florida -6.5"
+   },
+   "other_side": {
+    "team": "Florida State",
+    "spread": 6.5,
+    "text": "Florida State +6.5"
+   }
+  },
+  {
+   "id": "g3",
+   "game": "Texas at Texas A&M",
+   "short": "TEX at TA&M",
+   "away": "Texas",
+   "home": "Texas A&M",
+   "kickoff_utc": "2026-11-28T00:30Z",
+   "kickoff_ct": "Fri 6:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Texas",
+    "spread": -11.5,
+    "text": "Texas -11.5"
+   },
+   "other_side": {
+    "team": "Texas A&M",
+    "spread": 11.5,
+    "text": "Texas A&M +11.5"
+   }
+  },
+  {
+   "id": "g4",
+   "game": "Michigan at Ohio State",
+   "short": "MICH at OSU",
+   "away": "Michigan",
+   "home": "Ohio State",
+   "kickoff_utc": "2026-11-28T17:00Z",
+   "kickoff_ct": "Sat 11:00 AM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Michigan",
+    "spread": 10.5,
+    "text": "Michigan +10.5"
+   },
+   "other_side": {
+    "team": "Ohio State",
+    "spread": -10.5,
+    "text": "Ohio State -10.5"
+   }
+  },
+  {
+   "id": "g5",
+   "game": "South Carolina at Clemson",
+   "short": "SC at CLEM",
+   "away": "South Carolina",
+   "home": "Clemson",
+   "kickoff_utc": "2026-11-28T20:00Z",
+   "kickoff_ct": "Sat 2:00 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "South Carolina",
+    "spread": -5.5,
+    "text": "South Carolina -5.5"
+   },
+   "other_side": {
+    "team": "Clemson",
+    "spread": 5.5,
+    "text": "Clemson +5.5"
+   }
+  },
+  {
+   "id": "g6",
+   "game": "USC at UCLA",
+   "short": "USC at UCLA",
+   "away": "USC",
+   "home": "UCLA",
+   "kickoff_utc": "2026-11-28T20:30Z",
+   "kickoff_ct": "Sat 2:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "USC",
+    "spread": -6.5,
+    "text": "USC -6.5"
+   },
+   "other_side": {
+    "team": "UCLA",
+    "spread": 6.5,
+    "text": "UCLA +6.5"
+   }
+  },
+  {
+   "id": "g7",
+   "game": "Purdue at Indiana",
+   "short": "PUR at IU",
+   "away": "Purdue",
+   "home": "Indiana",
+   "kickoff_utc": "2026-11-29T00:00Z",
+   "kickoff_ct": "Sat 6:00 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Indiana",
+    "spread": -23.5,
+    "text": "Indiana -23.5"
+   },
+   "other_side": {
+    "team": "Purdue",
+    "spread": 23.5,
+    "text": "Purdue +23.5"
+   }
+  },
+  {
+   "id": "g8",
+   "game": "Washington at Oregon",
+   "short": "WASH at ORE",
+   "away": "Washington",
+   "home": "Oregon",
+   "kickoff_utc": "2026-11-29T00:30Z",
+   "kickoff_ct": "Sat 6:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Washington",
+    "spread": 13.5,
+    "text": "Washington +13.5"
+   },
+   "other_side": {
+    "team": "Oregon",
+    "spread": -13.5,
+    "text": "Oregon -13.5"
+   }
+  },
+  {
+   "id": "g9",
+   "game": "Auburn at Alabama",
+   "short": "AUB at ALA",
+   "away": "Auburn",
+   "home": "Alabama",
+   "kickoff_utc": "2026-11-29T00:30Z",
+   "kickoff_ct": "Sat 6:30 PM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Auburn",
+    "spread": 15.5,
+    "text": "Auburn +15.5"
+   },
+   "other_side": {
+    "team": "Alabama",
+    "spread": -15.5,
+    "text": "Alabama -15.5"
+   }
+  },
+  {
+   "id": "g10",
+   "game": "Notre Dame at Syracuse",
+   "short": "ND at SYR",
+   "away": "Notre Dame",
+   "home": "Syracuse",
+   "kickoff_utc": "2026-11-28T17:00Z",
+   "kickoff_ct": "Sat 11:00 AM CT",
+   "espn_match": "competitors[].team.location",
+   "golfdoc_side": {
+    "team": "Notre Dame",
+    "spread": -25.5,
+    "text": "Notre Dame -25.5"
+   },
+   "other_side": {
+    "team": "Syracuse",
+    "spread": 25.5,
+    "text": "Syracuse +25.5"
+   }
+  }
+ ],
+ "parlays": [
+  {
+   "parlay": "Fairway Finder",
+   "legs": [
+    "Michigan +10.5",
+    "Indiana -23.5",
+    "USC -6.5"
+   ],
+   "points": 6
+  },
+  {
+   "parlay": "GolfDoc Special",
+   "legs": [
+    "Michigan +10.5",
+    "Indiana -23.5",
+    "USC -6.5",
+    "Texas -11.5"
+   ],
+   "points": 11
+  },
+  {
+   "parlay": "Golden Domer",
+   "legs": [
+    "Michigan +10.5",
+    "Indiana -23.5",
+    "USC -6.5",
+    "Texas -11.5",
+    "Notre Dame -25.5"
+   ],
+   "points": 23
+  }
+ ],
+ "entries": [
+  {
+   "call_sign": "GOLFDOC",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Dirty Joe",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Turkey",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Washington +13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Cuban’s Doc",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Miami Cuban",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Dr. Stag",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "E",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Chilly’s Prize Pix",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "The Cuban Doc",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Colton",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "The Friendly Leprechaun ☘️",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Boomer",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "CDog",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Great Dane",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "GOOSE",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "T3",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Sunshine",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Hurbie",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Apple",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Texas Hoss",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Herb",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Washington +13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "GOAT 🐐",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Haak Attack",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Ronsboys",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "TommyBoy",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "River Rat",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "CMoore",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Uncle Buck",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Tosin",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Ham because what is yam",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "LSU knife/gun club",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Operator 1",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "SJR",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "The ZTW Show",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "El Presidente",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Larrygc87",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Tennis wizard",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "King Of The Castle",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Megatron",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Stark Naked",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "DBREEZY",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Red raiders natty",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Industrial Rehab",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Vero",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "BOB Burnt Orange Boys",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Loondawg",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "GOIRISH",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Washington +13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Epic Picks",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "The Saturday Surgeon",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "putman",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Washington +13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Weldo",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Righteous Anatomicity",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Petpad",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Iceman",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "MP",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas -11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Sandstorm Spur",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Big D",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Washington +13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Sruthi",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "USC -6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Honey Badger",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Washington +13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "Laddermsn",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Washington +13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Big Dawg Sanford",
+   "picks": {
+    "g1": "Mississippi State +19.5",
+    "g2": "Florida State +6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Michigan +10.5",
+    "g5": "Clemson +5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Purdue +23.5",
+    "g8": "Washington +13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "disagree"
+   }
+  },
+  {
+   "call_sign": "Farmvoy",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas -11.5",
+    "g4": "Michigan +10.5",
+    "g5": "South Carolina -5.5",
+    "g6": "UCLA +6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Auburn +15.5",
+    "g10": "Notre Dame -25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "agree",
+    "GolfDoc Special": "disagree",
+    "Golden Domer": "agree"
+   }
+  },
+  {
+   "call_sign": "SHK",
+   "picks": {
+    "g1": "Ole Miss -19.5",
+    "g2": "Florida -6.5",
+    "g3": "Texas A&M +11.5",
+    "g4": "Ohio State -10.5",
+    "g5": "Clemson +5.5",
+    "g6": "USC -6.5",
+    "g7": "Indiana -23.5",
+    "g8": "Oregon -13.5",
+    "g9": "Alabama -15.5",
+    "g10": "Syracuse +25.5"
+   },
+   "parlays": {
+    "Fairway Finder": "disagree",
+    "GolfDoc Special": "agree",
+    "Golden Domer": "agree"
+   }
+  }
+ ]
+}

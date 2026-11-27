@@ -1,0 +1,638 @@
+{
+ "schema": "btg-live/1",
+ "week": 13,
+ "title": "Beat the GolfDoc Week 13 — Live Standings as of 11:50 AM CT",
+ "as_of": "11:50 AM CT",
+ "generated_at": "2026-11-27T17:50:26.222Z",
+ "scoring": "1 point per correct ATS pick (10 games; Game 10 is the Bonus Game) + parlay calls at 6 / 11 / 23 points (Agree scores if it hits, Disagree scores if it misses). Max 50. Push = 0.",
+ "source_scores": "ESPN public scoreboard (site.api.espn.com)",
+ "games_final": 0,
+ "games_total": 10,
+ "entries": 63,
+ "golfdoc_points": 0,
+ "golfdoc_live": 1,
+ "beating_golfdoc": 0,
+ "max_points": 50,
+ "games": [
+  {
+   "game": "Mississippi State at Ole Miss",
+   "short": "MSST at MISS",
+   "golfdoc_pick": "Mississippi State +19.5",
+   "kickoff": "Fri 11:00 AM CT",
+   "state": "LIVE",
+   "detail": "12:40 - 2nd · live/unofficial",
+   "score": "MSST 0 · MISS 3",
+   "golfdoc_side": "cover"
+  },
+  {
+   "game": "Florida at Florida State",
+   "short": "FLA at FSU",
+   "golfdoc_pick": "Florida -6.5",
+   "kickoff": "Fri 2:30 PM CT",
+   "state": "NOT STARTED",
+   "detail": "Kickoff Fri 2:30 PM CT",
+   "score": "",
+   "golfdoc_side": "pending"
+  },
+  {
+   "game": "Texas at Texas A&M",
+   "short": "TEX at TA&M",
+   "golfdoc_pick": "Texas -11.5",
+   "kickoff": "Fri 6:30 PM CT",
+   "state": "NOT STARTED",
+   "detail": "Kickoff Fri 6:30 PM CT",
+   "score": "",
+   "golfdoc_side": "pending"
+  },
+  {
+   "game": "Michigan at Ohio State",
+   "short": "MICH at OSU",
+   "golfdoc_pick": "Michigan +10.5",
+   "kickoff": "Sat 11:00 AM CT",
+   "state": "NOT STARTED",
+   "detail": "Kickoff Sat 11:00 AM CT",
+   "score": "",
+   "golfdoc_side": "pending"
+  },
+  {
+   "game": "South Carolina at Clemson",
+   "short": "SC at CLEM",
+   "golfdoc_pick": "South Carolina -5.5",
+   "kickoff": "Sat 2:00 PM CT",
+   "state": "NOT STARTED",
+   "detail": "Kickoff Sat 2:00 PM CT",
+   "score": "",
+   "golfdoc_side": "pending"
+  },
+  {
+   "game": "USC at UCLA",
+   "short": "USC at UCLA",
+   "golfdoc_pick": "USC -6.5",
+   "kickoff": "Sat 2:30 PM CT",
+   "state": "NOT STARTED",
+   "detail": "Kickoff Sat 2:30 PM CT",
+   "score": "",
+   "golfdoc_side": "pending"
+  },
+  {
+   "game": "Purdue at Indiana",
+   "short": "PUR at IU",
+   "golfdoc_pick": "Indiana -23.5",
+   "kickoff": "Sat 6:00 PM CT",
+   "state": "NOT STARTED",
+   "detail": "Kickoff Sat 6:00 PM CT",
+   "score": "",
+   "golfdoc_side": "pending"
+  },
+  {
+   "game": "Washington at Oregon",
+   "short": "WASH at ORE",
+   "golfdoc_pick": "Washington +13.5",
+   "kickoff": "Sat 6:30 PM CT",
+   "state": "NOT STARTED",
+   "detail": "Kickoff Sat 6:30 PM CT",
+   "score": "",
+   "golfdoc_side": "pending"
+  },
+  {
+   "game": "Auburn at Alabama",
+   "short": "AUB at ALA",
+   "golfdoc_pick": "Auburn +15.5",
+   "kickoff": "Sat 6:30 PM CT",
+   "state": "NOT STARTED",
+   "detail": "Kickoff Sat 6:30 PM CT",
+   "score": "",
+   "golfdoc_side": "pending"
+  },
+  {
+   "game": "Notre Dame at Syracuse",
+   "short": "ND at SYR",
+   "golfdoc_pick": "Notre Dame -25.5",
+   "kickoff": "Sat 11:00 AM CT",
+   "state": "NOT STARTED",
+   "detail": "Kickoff Sat 11:00 AM CT",
+   "score": "",
+   "golfdoc_side": "pending"
+  }
+ ],
+ "parlays": {
+  "Fairway Finder": {
+   "status": "PENDING",
+   "if_current_scores_hold": "PENDING"
+  },
+  "GolfDoc Special": {
+   "status": "PENDING",
+   "if_current_scores_hold": "PENDING"
+  },
+  "Golden Domer": {
+   "status": "PENDING",
+   "if_current_scores_hold": "PENDING"
+  }
+ },
+ "individual": [
+  {
+   "rank": "T1",
+   "call_sign": "GOLFDOC",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Dirty Joe",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Turkey",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Boomer",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Great Dane",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "T3",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Texas Hoss",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Herb",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "TommyBoy",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "CMoore",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Uncle Buck",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Tosin",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "LSU knife/gun club",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Stark Naked",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Red raiders natty",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "BOB Burnt Orange Boys",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Loondawg",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "GOIRISH",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Epic Picks",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "putman",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Righteous Anatomicity",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "MP",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Sandstorm Spur",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Sruthi",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Honey Badger",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Laddermsn",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Big Dawg Sanford",
+   "points": 0,
+   "live_points_if_current_scores_hold": 1,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Cuban’s Doc",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Miami Cuban",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Dr. Stag",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "E",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Chilly’s Prize Pix",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "The Cuban Doc",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Colton",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "The Friendly Leprechaun ☘️",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "CDog",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "GOOSE",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Sunshine",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Hurbie",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Apple",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "GOAT 🐐",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Haak Attack",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Ronsboys",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "River Rat",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Ham because what is yam",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Operator 1",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "SJR",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "The ZTW Show",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "El Presidente",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Larrygc87",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Tennis wizard",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "King Of The Castle",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Megatron",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "DBREEZY",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Industrial Rehab",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Vero",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "The Saturday Surgeon",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Weldo",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Petpad",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Iceman",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Big D",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "Farmvoy",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  },
+  {
+   "rank": "T1",
+   "call_sign": "SHK",
+   "points": 0,
+   "live_points_if_current_scores_hold": 0,
+   "max_possible": 50,
+   "vs_golfdoc": 0
+  }
+ ]
+}
