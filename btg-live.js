@@ -239,24 +239,35 @@
 
   function callKind(value) {
     var kind = String(value == null ? '' : value).trim().toLowerCase();
-    if (kind === 'agree' || kind === 'disagree') return kind;
+    /* Check disagree first: "disagree" contains the letters "agree". */
+    if (/^disagree\b/.test(kind) || kind === 'disagree') return 'disagree';
+    if (/^agree\b/.test(kind) || kind === 'agree') return 'agree';
     return '';
   }
 
-  function pointsForParlay(state, kind) {
-    if (state === 'hit' && kind === 'agree') return 1;
-    if (state === 'miss' && kind === 'disagree') return 1;
+  function parlayPointValue(parlay) {
+    var n = parlay && parlay.points != null ? Number(parlay.points) : 1;
+    return isFinite(n) && n > 0 ? n : 1;
+  }
+
+  function pointsForParlay(state, kind, pts) {
+    var value = pts == null ? 1 : Number(pts);
+    if (!isFinite(value) || value < 0) value = 1;
+    if (state === 'hit' && kind === 'agree') return value;
+    if (state === 'miss' && kind === 'disagree') return value;
     return 0;
   }
 
-  function parlayStillPossible(state, legOutcomes, kind) {
+  function parlayStillPossible(state, legOutcomes, kind, pts) {
+    var value = pts == null ? 1 : Number(pts);
+    if (!isFinite(value) || value < 0) value = 1;
     if (kind !== 'agree' && kind !== 'disagree') return 0;
     if (state !== 'pending') return 0;
     if (kind === 'agree') {
       var blocked = legOutcomes.some(function (outcome) { return outcome === 'push'; });
-      return blocked ? 0 : 1;
+      return blocked ? 0 : value;
     }
-    return 1;
+    return value;
   }
 
   function scoreEntry(week, parsed, entry) {
@@ -280,14 +291,15 @@
 
     (week.parlays || []).forEach(function (parlay) {
       var legs = parlay.legs || [];
+      var pts = parlayPointValue(parlay);
       var officialLegs = legs.map(function (leg) { return legOutcome(week, parsed, leg, 'official'); });
       var liveLegs = legs.map(function (leg) { return legOutcome(week, parsed, leg, 'live'); });
       var officialState = parlayState(officialLegs);
       var liveState = parlayState(liveLegs);
       var kind = callKind(parlays[parlay.parlay]);
-      points += pointsForParlay(officialState, kind);
-      live += pointsForParlay(liveState, kind);
-      possible += parlayStillPossible(officialState, officialLegs, kind);
+      points += pointsForParlay(officialState, kind, pts);
+      live += pointsForParlay(liveState, kind, pts);
+      possible += parlayStillPossible(officialState, officialLegs, kind, pts);
     });
 
     return {
@@ -432,6 +444,11 @@
     });
     var finals = games.filter(function (game) { return game.phase === 'final'; }).length;
     var started = games.filter(function (game) { return game.phase === 'live' || game.phase === 'final'; }).length;
+    var maxPoints = (week.games || []).length;
+    (week.parlays || []).forEach(function (parlay) { maxPoints += parlayPointValue(parlay); });
+    if (week.scoring && week.scoring.max_points != null && isFinite(Number(week.scoring.max_points))) {
+      maxPoints = Number(week.scoring.max_points);
+    }
 
     return {
       week: week.week,
@@ -440,6 +457,7 @@
       golfdocLive: docScore.live,
       beating: beating,
       total: rows.length,
+      maxPoints: maxPoints,
       gamesFinal: finals,
       gamesStarted: started,
       games: games,
@@ -486,7 +504,8 @@
     } else if (!board.gamesFinal) {
       note = 'Official points stay at 0 until a game is final. LIVE* is unofficial and counts the current score as if it holds. A push scores 0.';
     } else {
-      note = 'Official points count final games only. LIVE* is unofficial for any game still in progress. A push scores 0. Max is 8.';
+      var maxPoints = board.maxPoints != null ? board.maxPoints : 8;
+      note = 'Official points count final games only. LIVE* is unofficial for any game still in progress. A push scores 0. Max is ' + maxPoints + '.';
     }
     return {
       label: board.label,
@@ -678,6 +697,29 @@
     });
   }
 
+  function mergeEspnPayloads(payloads) {
+    var events = [];
+    var seen = {};
+    (payloads || []).forEach(function (payload) {
+      ((payload && payload.events) || []).forEach(function (event) {
+        var id = String((event && event.id) || '');
+        if (id && seen[id]) return;
+        if (id) seen[id] = true;
+        events.push(event);
+      });
+    });
+    return { events: events };
+  }
+
+  function feedUrls(week) {
+    var feeds = week && week.scores_feeds;
+    if (Array.isArray(feeds) && feeds.length) return feeds.filter(Boolean);
+    var feed = week && week.scores_feed;
+    if (Array.isArray(feed)) return feed.filter(Boolean);
+    if (typeof feed === 'string' && feed) return [feed];
+    return [];
+  }
+
   function start(options) {
     if (typeof document === 'undefined') return;
     var opts = options || {};
@@ -711,10 +753,10 @@
           return { pointer: pointer, week: week };
         });
       }).then(function (loaded) {
-        var feed = loaded.week.scores_feed;
-        if (!feed) throw new Error('missing feed');
-        return fetchJson(feed, false).then(function (payload) {
-          var parsed = parseEspn(loaded.week, payload);
+        var urls = feedUrls(loaded.week);
+        if (!urls.length) throw new Error('missing feed');
+        return Promise.all(urls.map(function (url) { return fetchJson(url, false); })).then(function (payloads) {
+          var parsed = parseEspn(loaded.week, mergeEspnPayloads(payloads));
           var matched = (loaded.week.games || []).some(function (game) {
             return parsed[game.id] && !parsed[game.id].missing;
           });
@@ -758,8 +800,12 @@
     outcomeFromMargin: outcomeFromMargin,
     classifyStatus: classifyStatus,
     parseEspn: parseEspn,
+    mergeEspnPayloads: mergeEspnPayloads,
+    feedUrls: feedUrls,
     scheduledBoard: scheduledBoard,
     grade: grade,
+    callKind: callKind,
+    parlayPointValue: parlayPointValue,
     formatAsOfCT: formatAsOfCT,
     formatVs: formatVs,
     viewFromSnapshot: viewFromSnapshot,
