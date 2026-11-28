@@ -253,8 +253,10 @@
   function pointsForParlay(state, kind, pts) {
     var value = pts == null ? 1 : Number(pts);
     if (!isFinite(value) || value < 0) value = 1;
+    /* Agree scores the parlay's point value only if it hits.
+       Disagree scores 1 point only if it misses — never the odds-based parlay value. */
     if (state === 'hit' && kind === 'agree') return value;
-    if (state === 'miss' && kind === 'disagree') return value;
+    if (state === 'miss' && kind === 'disagree') return 1;
     return 0;
   }
 
@@ -267,7 +269,7 @@
       var blocked = legOutcomes.some(function (outcome) { return outcome === 'push'; });
       return blocked ? 0 : value;
     }
-    return value;
+    return 1;
   }
 
   function scoreEntry(week, parsed, entry) {
@@ -806,6 +808,8 @@
     grade: grade,
     callKind: callKind,
     parlayPointValue: parlayPointValue,
+    pointsForParlay: pointsForParlay,
+    parlayStillPossible: parlayStillPossible,
     formatAsOfCT: formatAsOfCT,
     formatVs: formatVs,
     viewFromSnapshot: viewFromSnapshot,

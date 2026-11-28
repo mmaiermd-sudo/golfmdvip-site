@@ -5,12 +5,12 @@
  "date": "20261127",
  "lock_ct": "2026-11-27 11:00:00",
  "scoring": {
-  "rule": "1 point per correct ATS pick (10 games; Game 10 is the Bonus Game) + parlay calls at 6 / 11 / 23 points (Agree scores if it hits, Disagree scores if it misses). Max 50. Push = 0.",
+  "rule": "1 point per correct ATS pick (10 games; Game 10 is the Bonus Game). Agreeing with a parlay scores its points only if it hits (Fairway Finder 6, GolfDoc Special 11, Golden Domer 23). Disagreeing scores 1 point only if that parlay misses, and 0 if it hits. Max 50 if you agree with all three and they all hit; picking against all three and going 10-for-10 is a 13-point ceiling. Push = 0.",
   "points_per_correct_ats": 1,
   "max_points": 50,
   "push_points": 0,
   "game": "A pick scores if that side covers: (pick team score - opponent score + spread) > 0; = 0 is a push.",
-  "parlay": "A parlay HITS only if every leg (GolfDoc's side) covers; it MISSES once any leg fails. 'agree' scores on HIT, 'disagree' scores on MISS. Fairway Finder = 6, GolfDoc Special = 11, Golden Domer = 23.",
+  "parlay": "A parlay HITS only if every leg (GolfDoc's side) covers; it MISSES once any leg fails. 'agree' scores the parlay's point value on HIT (0 on MISS). 'disagree' scores 1 point on MISS (0 on HIT). Fairway Finder = 6, GolfDoc Special = 11, Golden Domer = 23.",
   "rank": "Standard competition ranking by official points (ties share a rank, shown as T#). LIVE* is unofficial and ranks after official points."
  },
  "scores_feed": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261127&groups=80&limit=400",

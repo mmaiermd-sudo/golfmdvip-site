@@ -328,13 +328,45 @@ assert.strictEqual(live.callKind('Disagree – it misses'), 'disagree');
 assert.strictEqual(live.callKind('disagree'), 'disagree');
 assert.strictEqual(live.parlayPointValue({ points: 23 }), 23);
 assert.strictEqual(live.parlayPointValue({}), 1);
+assert.strictEqual(live.pointsForParlay('hit', 'agree', 23), 23);
+assert.strictEqual(live.pointsForParlay('miss', 'agree', 23), 0);
+assert.strictEqual(live.pointsForParlay('miss', 'disagree', 23), 1);
+assert.strictEqual(live.pointsForParlay('hit', 'disagree', 23), 0);
+assert.strictEqual(live.pointsForParlay('pending', 'disagree', 23), 0);
+assert.strictEqual(live.parlayStillPossible('pending', ['pending', 'pending'], 'agree', 23), 23);
+assert.strictEqual(live.parlayStillPossible('pending', ['pending', 'pending'], 'disagree', 23), 1);
+assert.strictEqual(live.parlayStillPossible('miss', ['fail', 'pending'], 'disagree', 23), 0);
 assert.deepStrictEqual(live.feedUrls(week13).length, 2);
+
+function expectedParlayCeiling(kind, pts) {
+  if (kind === 'agree') return pts;
+  if (kind === 'disagree') return 1;
+  return 0;
+}
+
+function expectedEntryMax(week, entry) {
+  var max = (week.games || []).length;
+  var parlays = entry && entry.parlays ? entry.parlays : {};
+  (week.parlays || []).forEach(function (parlay) {
+    max += expectedParlayCeiling(live.callKind(parlays[parlay.parlay]), live.parlayPointValue(parlay));
+  });
+  return max;
+}
 
 var pre13 = live.grade(week13, live.scheduledBoard(week13));
 assert.strictEqual(pre13.total, 63);
 assert.strictEqual(pre13.maxPoints, 50);
 assert.strictEqual(pre13.golfdocPoints, 0);
-assert.ok(pre13.rows.every(function (row) { return row.points === 0 && row.live === 0 && row.max === 50; }));
+assert.strictEqual(rowBy(pre13, 'GOLFDOC').max, 50);
+assert.strictEqual(rowBy(pre13, 'Turkey').max, 13);
+pre13.rows.forEach(function (row) {
+  assert.strictEqual(row.points, 0);
+  assert.strictEqual(row.live, 0);
+  var entry = week13.entries.filter(function (item) { return item.call_sign === row.callSign; })[0];
+  assert.ok(entry, 'missing entry for ' + row.callSign);
+  assert.strictEqual(row.max, expectedEntryMax(week13, entry));
+  assert.ok(row.max <= 50);
+});
 
 var liveEgg = live.scheduledBoard(week13);
 liveEgg.g1 = { phase: 'live', missing: false, statusName: 'STATUS_IN_PROGRESS', detail: '12:40 - 2nd', awayScore: 0, homeScore: 3 };
@@ -364,6 +396,37 @@ assert.strictEqual(sweep.gamesFinal, 10);
 assert.strictEqual(sweep.golfdocPoints, 50);
 assert.strictEqual(rowBy(sweep, 'GOLFDOC').points, 50);
 assert.ok(sweep.parlays.every(function (parlay) { return parlay.status === 'hit'; }));
+assert.strictEqual(rowBy(sweep, 'Turkey').points, 7);
+assert.strictEqual(rowBy(sweep, 'Turkey').max, 7);
+
+/* Texas -11.5 misses 16-6. That officially kills the GolfDoc Special and Golden Domer.
+   Fairway Finder legs are all still pending, so it stays alive. Disagree scores 1, not 11 or 23. */
+var afterTexas = live.scheduledBoard(week13);
+afterTexas.g1 = { phase: 'final', missing: false, statusName: 'STATUS_FINAL', detail: 'Final', awayScore: 17, homeScore: 41 };
+afterTexas.g2 = { phase: 'final', missing: false, statusName: 'STATUS_FINAL', detail: 'Final', awayScore: 26, homeScore: 10 };
+afterTexas.g3 = { phase: 'final', missing: false, statusName: 'STATUS_FINAL', detail: 'Final', awayScore: 16, homeScore: 6 };
+var boardTexas = live.grade(week13, afterTexas);
+assert.strictEqual(boardTexas.gamesFinal, 3);
+assert.strictEqual(boardTexas.golfdocPoints, 1);
+assert.strictEqual(rowBy(boardTexas, 'GOLFDOC').points, 1);
+assert.strictEqual(rowBy(boardTexas, 'GOLFDOC').live, 1);
+assert.strictEqual(rowBy(boardTexas, 'GOLFDOC').max, 14);
+assert.strictEqual(boardTexas.parlays.filter(function (p) { return p.name === 'Fairway Finder'; })[0].status, 'pending');
+assert.strictEqual(boardTexas.parlays.filter(function (p) { return p.name === 'GolfDoc Special'; })[0].status, 'miss');
+assert.strictEqual(boardTexas.parlays.filter(function (p) { return p.name === 'Golden Domer'; })[0].status, 'miss');
+assert.strictEqual(rowBy(boardTexas, 'Turkey').points, 3);
+assert.strictEqual(rowBy(boardTexas, 'Turkey').live, 3);
+assert.strictEqual(rowBy(boardTexas, 'Turkey').max, 11);
+assert.strictEqual(rowBy(boardTexas, 'GOOSE').points, 5);
+assert.strictEqual(rowBy(boardTexas, 'GOOSE').live, 5);
+assert.strictEqual(rowBy(boardTexas, 'GOOSE').max, 13);
+assert.strictEqual(rowBy(boardTexas, 'E').points, 5);
+assert.strictEqual(rowBy(boardTexas, 'E').max, 18);
+boardTexas.rows.forEach(function (row) {
+  assert.ok(row.live <= row.max, row.callSign + ' live ' + row.live + ' exceeds max ' + row.max);
+  assert.ok(row.points <= row.max);
+  assert.ok(row.live <= 18, row.callSign + ' live inflated to ' + row.live);
+});
 
 var snap13 = JSON.parse(fs.readFileSync(path.join(root, 'data/btg-live-week13.json'), 'utf8'));
 assert.strictEqual(snap13.week, 13);
